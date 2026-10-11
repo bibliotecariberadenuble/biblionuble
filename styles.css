@@ -52,3 +52,13 @@
 .books .book .cover>.cover-fallback span{font-size:45px}
 .books .book .cover>.cover-fallback strong{font-size:20px}
 @media(max-width:600px){.books .book .cover{height:190px!important}}
+
+/* Instalación fácil y visible para estudiantes */
+#install{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:206px;padding:12px 19px!important;border:3px solid #fff!important;border-radius:20px!important;background:linear-gradient(135deg,#ffdf48,#ffad24)!important;color:#183258!important;font-size:1.09rem!important;font-weight:900!important;box-shadow:0 5px 0 #c27912,0 8px 20px #153b7040!important;line-height:1.2;transition:transform .15s,box-shadow .15s;animation:install-glow 2.8s ease-in-out 3}
+#install small{font-size:.73rem;font-weight:800;letter-spacing:.02em}
+#install:hover,#install:focus-visible{transform:translateY(-2px);box-shadow:0 7px 0 #c27912,0 11px 22px #153b7040!important;outline:3px solid #246cb6;outline-offset:2px}
+#install:active{transform:translateY(2px)}
+@keyframes install-glow{50%{box-shadow:0 5px 0 #c27912,0 0 0 7px #ffce4870,0 9px 20px #153b7040}}
+.install-help[hidden]{display:none!important}.install-help{position:fixed;inset:0;z-index:10000;background:#102542ba;display:grid;place-items:center;padding:20px}.install-help-card{position:relative;background:#fff;border-radius:24px;padding:32px 24px;max-width:420px;width:100%;text-align:center;box-shadow:0 15px 50px #10254270;color:#183258}.install-help-card h2{font-size:1.6rem;line-height:1.2}.install-help-card p{font-size:1.08rem;line-height:1.6}.install-help-icon{font-size:3.5rem}.install-help-close{position:absolute;right:13px;top:10px;border:0;background:transparent;font-size:1.4rem;padding:8px}.install-help-done{background:#183e79;color:white;border:0;border-radius:13px;padding:12px 25px;font-weight:800;font-size:1.05rem}
+@media(max-width:650px){.topnav{gap:12px;justify-content:center}#install{width:100%;max-width:340px;min-height:68px;font-size:1.18rem!important}.brand{text-align:center}}
+@media(prefers-reduced-motion:reduce){#install{animation:none}}
