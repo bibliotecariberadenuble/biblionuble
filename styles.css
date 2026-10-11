@@ -42,3 +42,13 @@
 .mini-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 #pendingBooks .mini-cover{filter:none}
 @media(max-width:600px){.cover{height:170px;padding:0}.mini-cover{width:100%;height:100%}}
+
+/* Versión 25: escenas directas sin marcos ni miniportadas */
+.books .book .cover{position:relative!important;display:block!important;width:100%!important;height:235px!important;padding:0!important;margin:0!important;overflow:hidden!important;background:#dcecf3!important;border:0!important}
+.books .book .cover>img.book-scene{display:block!important;position:relative!important;width:100%!important;height:100%!important;object-fit:cover!important;border:0!important;border-radius:0!important;max-width:none!important}
+.books .book .cover>img.book-scene[hidden]{display:none!important}
+.books .book .cover>.cover-fallback{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:linear-gradient(125deg,#127e9d,#e6a64c);color:#fff;text-align:center;padding:18px}
+.books .book .cover>.cover-fallback[hidden]{display:none!important}
+.books .book .cover>.cover-fallback span{font-size:45px}
+.books .book .cover>.cover-fallback strong{font-size:20px}
+@media(max-width:600px){.books .book .cover{height:190px!important}}
