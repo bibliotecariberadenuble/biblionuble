@@ -63,34 +63,22 @@
 @media(max-width:650px){.topnav{gap:12px;justify-content:center}#install{width:100%;max-width:340px;min-height:68px;font-size:1.18rem!important}.brand{text-align:center}}
 @media(prefers-reduced-motion:reduce){#install{animation:none}}
 
-/* Invitación de instalación protagonista, versión 2 */
-.topnav:has(#install:not([hidden])){align-items:center;gap:20px;max-width:1300px}
-#install:not([hidden]){position:relative;display:grid!important;grid-template-columns:65px minmax(0,1fr);grid-template-rows:auto auto auto;align-items:center;column-gap:15px;min-width:min(100%,540px);max-width:660px;min-height:125px;padding:16px 25px!important;border:4px solid #fff!important;border-radius:26px!important;background:linear-gradient(125deg,#fff35d 0%,#ffc528 52%,#ff8619 100%)!important;color:#102b55!important;text-align:left!important;box-shadow:0 7px 0 #aa5b00,0 15px 28px #0b264c55!important;transform-origin:center;animation:install-spotlight 3s ease-in-out infinite!important}
-#install .install-emoji{grid-row:1/4;grid-column:1;font-size:3.9rem;line-height:1;text-align:center;filter:drop-shadow(0 3px 2px #7e430050)}
-#install .install-main{grid-column:2;font-size:clamp(1.22rem,2.5vw,1.65rem);line-height:1.08;font-weight:1000;letter-spacing:-.025em}
-#install .install-action{grid-column:2;font-size:clamp(1.08rem,2.1vw,1.45rem);font-weight:1000;line-height:1.2;color:#fff;background:#13478a;border-radius:11px;padding:7px 10px;margin-top:7px;text-align:center;letter-spacing:.015em}
-#install small{grid-column:2;font-size:clamp(.9rem,1.6vw,1.05rem)!important;font-weight:900!important;color:#153653;margin-top:4px}
-#install:hover,#install:focus-visible{animation-play-state:paused!important;transform:translateY(-4px) scale(1.015);outline:4px solid #1260ac;outline-offset:3px}
-@keyframes install-spotlight{0%,100%{box-shadow:0 7px 0 #aa5b00,0 15px 28px #0b264c55}50%{box-shadow:0 7px 0 #aa5b00,0 0 0 7px #ffda5070,0 18px 32px #0b264c65}}
-@media(max-width:760px){.topnav:has(#install:not([hidden])){flex-direction:column;align-items:stretch}.topnav .brand{text-align:center}#install:not([hidden]){width:100%;max-width:none;min-width:0;min-height:130px;grid-template-columns:56px minmax(0,1fr);padding:15px 12px!important}#install .install-emoji{font-size:3.3rem}#install .install-main{font-size:clamp(1.24rem,5vw,1.7rem)}#install .install-action{font-size:clamp(1.08rem,4.3vw,1.45rem)}#install small{font-size:.95rem!important}}
-@media(prefers-reduced-motion:reduce){#install:not([hidden]){animation:none!important}}
 
-/* Botón infantil: una palabra gigante y alegre */
-#install:not([hidden]){display:flex!important;align-items:center!important;justify-content:center!important;width:min(100%,440px)!important;min-width:240px!important;min-height:105px!important;padding:12px 26px!important;border:6px solid #fff!important;border-radius:999px!important;background:linear-gradient(135deg,#ff53b0 0%,#ff8b39 50%,#ffdb3e 100%)!important;box-shadow:0 9px 0 #a42d72,0 17px 30px #42236c55!important;text-align:center!important;transform:rotate(-2deg);animation:install-kids 2.7s ease-in-out infinite!important;cursor:pointer!important}
-#install .install-word{display:block!important;font-family:'Trebuchet MS','Arial Rounded MT Bold',system-ui,sans-serif!important;font-size:clamp(2.5rem,5.5vw,4.1rem)!important;font-weight:1000!important;line-height:1.05!important;letter-spacing:.045em!important;color:#fff!important;-webkit-text-stroke:1.5px #682e9e;text-shadow:3px 4px 0 #682e9e,0 0 12px #ffffff70!important}
-#install:hover,#install:focus-visible{animation-play-state:paused!important;transform:rotate(0deg) scale(1.055)!important;outline:4px solid #632ac1;outline-offset:4px}
-@keyframes install-kids{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(2deg) scale(1.035)}}
-@media(max-width:760px){#install:not([hidden]){width:100%!important;max-width:440px!important;min-width:0!important;min-height:105px!important;margin-inline:auto!important}#install .install-word{font-size:clamp(2.4rem,11vw,3.9rem)!important}}
-@media(prefers-reduced-motion:reduce){#install:not([hidden]){animation:none!important;transform:none!important}}
-
-/* Corrección final: botón compacto, visible y fuera de la imagen */
-header.new-header{display:flex!important;flex-direction:column!important;overflow:visible!important}
-header.new-header .topnav{position:relative!important;z-index:20!important;order:2!important;width:100%!important;max-width:none!important;margin:0!important;padding:12px 16px 16px!important;min-height:0!important;display:flex!important;justify-content:center!important;align-items:center!important;gap:12px!important;background:#f6f9fc!important;box-sizing:border-box!important}
-header.new-header .topnav .brand{font-size:clamp(1rem,3vw,1.3rem)!important;flex:0 1 auto!important}
-header.new-header .new-hero{order:1!important;position:relative!important;z-index:1!important;overflow:hidden!important}
-header.new-header .search-strip{order:3!important;width:100%!important}
-#install:not([hidden]){position:relative!important;z-index:21!important;flex:0 0 auto!important;display:flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:clamp(170px,32vw,235px)!important;min-width:0!important;max-width:235px!important;min-height:0!important;height:62px!important;padding:6px 15px!important;margin:0!important;border:3px solid #fff!important;border-radius:18px!important;background:linear-gradient(125deg,#ff49aa,#ff8736 70%,#ffd644)!important;box-shadow:0 4px 0 #a42d72,0 6px 12px #42236c35!important;transform:none!important;animation:none!important;white-space:nowrap!important}
-#install .install-word{font-family:'Trebuchet MS',Arial,sans-serif!important;font-size:clamp(1.55rem,3.4vw,2.15rem)!important;font-weight:1000!important;line-height:1!important;letter-spacing:.025em!important;color:#fff!important;-webkit-text-stroke:.65px #64268d!important;text-shadow:2px 2px 0 #64268d!important}
-#install:hover,#install:focus-visible{transform:translateY(-1px)!important;animation:none!important;outline:3px solid #6535a0!important;outline-offset:2px!important}
-@media(max-width:650px){header.new-header .topnav{flex-direction:row!important;flex-wrap:wrap!important;justify-content:center!important;gap:8px!important;padding:10px 10px 14px!important}header.new-header .topnav .brand{font-size:1.02rem!important;white-space:nowrap!important}#install:not([hidden]){width:188px!important;max-width:calc(100vw - 20px)!important;height:58px!important;padding:6px 12px!important}#install .install-word{font-size:1.8rem!important}}
-@media(max-width:360px){header.new-header .topnav{flex-direction:column!important}#install:not([hidden]){width:200px!important}}
+/* INSTALAR: bloque independiente, sin superposición con cabecera */
+.new-header{display:block!important;overflow:visible!important}
+.new-header .topnav{height:auto!important;min-height:42px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:8px 14px!important}
+.new-header .new-hero{position:relative!important;z-index:0!important;overflow:hidden!important;clear:both!important}
+.new-header .new-hero .banner-original{display:block!important;width:100%!important;height:auto!important}
+.install-strip{position:relative!important;z-index:2!important;clear:both!important;display:flex!important;justify-content:center!important;align-items:center!important;min-height:84px!important;padding:12px 16px!important;margin:0!important;background:linear-gradient(90deg,#eaf5ff,#fff6df,#eaf5ff)!important;isolation:isolate!important}
+.install-strip #install:not([hidden]){position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;width:210px!important;max-width:calc(100vw - 32px)!important;min-width:0!important;height:56px!important;min-height:0!important;margin:0!important;padding:5px 14px!important;border:3px solid white!important;border-radius:16px!important;background:linear-gradient(110deg,#ed36a5,#ff753e 75%,#ffc836)!important;box-shadow:0 4px 0 #9b3979,0 6px 12px #5c346330!important;transform:none!important;animation:none!important;white-space:nowrap!important;line-height:1!important}
+.install-strip #install .install-word{display:block!important;font-family:'Trebuchet MS',Arial,sans-serif!important;font-size:2rem!important;font-weight:900!important;letter-spacing:.04em!important;line-height:1!important;color:#fff!important;-webkit-text-stroke:.4px #713384!important;text-shadow:2px 2px 0 #713384!important}
+.install-strip #install:hover,.install-strip #install:focus-visible{outline:3px solid #7146b8!important;outline-offset:3px!important;filter:brightness(1.06)}
+@media(max-width:600px){.install-strip{min-height:78px!important;padding:10px 12px!important}.install-strip #install:not([hidden]){width:190px!important;height:54px!important}.install-strip #install .install-word{font-size:1.85rem!important}}
+/* Portadas más grandes, nítidas y legibles en pantallas pequeñas */
+.books{grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:17px}
+.cover{height:auto!important;aspect-ratio:3/4!important;overflow:hidden!important;border-radius:12px 12px 0 0!important}
+.cover img{width:100%!important;height:100%!important;object-fit:contain!important;background:linear-gradient(140deg,#e6effa,#faf2e6)!important}
+.book{min-width:0!important}
+.book h3{font-size:1.08rem!important;line-height:1.3!important;overflow-wrap:anywhere}
+@media(max-width:600px){.books{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}.cover{aspect-ratio:3/4!important}.bookbody{padding:10px!important}.book h3{font-size:.98rem!important}.author{font-size:.82rem!important}.description{font-size:.8rem!important}.read{padding:11px 7px!important;font-size:.9rem!important}}
+@media(max-width:360px){.books{grid-template-columns:1fr!important}.cover{max-height:380px}}
