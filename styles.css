@@ -11,3 +11,26 @@
 .new-hero .hero-logo img[hidden]{display:none}
 .new-hero{background-image:url('./assets/cabecera-biblionuble.jpg'),url('./assets/biblionuble-paisaje.svg')!important;background-size:cover!important;background-position:center!important}
 @media(max-width:650px){.new-hero .hero-logo{height:85px!important;max-width:85px!important}.new-hero .hero-overlay{align-items:start!important}}
+
+/* Miniportadas originales BiblioÑuble: sin reproducir cubiertas comerciales protegidas */
+.cover{padding:13px;background:linear-gradient(145deg,#e4edf7,#f4f0e7);height:265px}
+.mini-cover{position:relative;isolation:isolate;width:min(160px,94%);height:235px;overflow:hidden;border-radius:3px 8px 8px 3px;border-left:8px solid #0003;box-shadow:5px 8px 16px #112b4a4a,inset 0 0 0 2px #ffffff60;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;background:linear-gradient(145deg,#285a7c,#15304b)}
+.mini-cover:after{content:'';position:absolute;inset:10px;border:1px solid #ffffff66;border-radius:2px;pointer-events:none}
+.mini-cover-text{position:relative;z-index:2;display:flex;flex-direction:column;gap:11px;align-items:center;padding:14px;max-width:100%;text-shadow:0 2px 6px #0007}
+.mini-cover-text small{font-size:8px;letter-spacing:1.3px;font-weight:800}
+.mini-cover-text strong{font-family:Georgia,serif;font-size:clamp(15px,1.55vw,20px);line-height:1.17;overflow-wrap:anywhere}
+.mini-cover-text em{font-size:10px;font-style:normal;letter-spacing:.3px}
+.mini-cover-art{position:absolute;inset:0;overflow:hidden;opacity:.7}
+.mini-cover-decor{position:absolute;left:-25%;top:-26%;width:150%;height:75%;border-radius:50%;background:radial-gradient(circle,#fff7 0 8%,#ffffff15 10% 35%,transparent 40%)}
+.mini-cover-sky{position:absolute;left:-20%;right:-20%;bottom:-35%;height:65%;border-radius:50% 50% 0 0;background:linear-gradient(30deg,#fff2,#ffcc5570)}
+.mini-cover--cacao{background:linear-gradient(145deg,#8b4526,#3f1e2a)}
+.mini-cover--magia{background:linear-gradient(145deg,#25337d,#151631)}
+.mini-cover--papelucho{background:linear-gradient(145deg,#eebd42,#d76244);color:#232e45}
+.mini-cover--papelucho .mini-cover-text{text-shadow:none}
+.mini-cover--rio{background:linear-gradient(145deg,#2386a6,#155c68)}
+.mini-cover--oro{background:linear-gradient(145deg,#a5672e,#5b342a)}
+.mini-cover--misterio{background:linear-gradient(145deg,#504b78,#171b37)}
+.mini-cover--clasico{background:linear-gradient(145deg,#80634a,#3c332b)}
+.mini-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3}
+#pendingBooks .mini-cover{filter:saturate(.78)}
+@media(max-width:600px){.cover{height:204px;padding:10px}.mini-cover{height:183px;width:min(126px,96%)}.mini-cover-text{padding:9px;gap:8px}.mini-cover-text strong{font-size:14px}.mini-cover-text small{font-size:6px}.mini-cover-text em{font-size:8px}}
