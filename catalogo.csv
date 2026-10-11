@@ -19,3 +19,22 @@ id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado
 18,Peter Pan,J. M. Barrie,Fantasía y aventuras,5° 6° 7°,PDF,Wendy y sus hermanos descubren Nunca Jamás.,https://commons.wikimedia.org/wiki/Special:FilePath/Peter_Pan_1915_cover.jpg,,Pendiente
 19,Robin Hood,Anónimo (adaptación sin acreditar),Aventuras y leyendas,5° 6° 7°,PDF,Relato sobre la leyenda del arquero de Sherwood.,./portadas/robinhood.svg,,Pendiente
 20,Yo robot,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Historias sobre robots y dilemas éticos de la tecnología.,./portadas/yorobot.svg,,Pendiente
+21,The Matrix (guion original),Lana y Lilly Wachowski,Cine y guion,8°,PDF,Guion cinematográfico en inglés; ciencia ficción y análisis audiovisual.,,,Pendiente
+22,La ética de Aristóteles,Aristóteles; traducción de Pedro Simón Abril,Filosofía,8°,PDF,Reflexión clásica sobre la virtud; la felicidad y las decisiones éticas.,,,Pendiente
+23,La Divina Comedia,Dante Alighieri,Poesía clásica,8°,PDF,Viaje alegórico por el Infierno; el Purgatorio y el Paraíso.,,,Pendiente
+24,Annabel Lee,Edgar Allan Poe,Poesía y misterio,7° 8°,PDF,Poema sobre el amor; la pérdida y la memoria.,,,Pendiente
+25,Doble crimen en la calle Morgue,Edgar Allan Poe,Misterio y detectives,7° 8°,PDF,El detective Dupin investiga un crimen mediante razonamiento.,,,Pendiente
+26,El barril de amontillado,Edgar Allan Poe,Misterio y suspenso,8°,PDF,Relato de venganza y engaño durante un carnaval.,,,Pendiente
+27,El corazón delator,Edgar Allan Poe,Misterio y suspenso,7° 8°,PDF,Un narrador intenta ocultar su crimen y su culpa.,,,Pendiente
+28,El cuervo,Edgar Allan Poe,Poesía y misterio,7° 8°,PDF,Un visitante nocturno desencadena recuerdos y angustia.,,,Pendiente
+29,El entierro prematuro,Edgar Allan Poe,Misterio y suspenso,8°,PDF,Relato sobre el miedo a ser enterrado vivo.,,,Pendiente
+30,El escarabajo de oro,Edgar Allan Poe,Aventuras y enigmas,7° 8°,PDF,Un mensaje cifrado conduce a un misterioso tesoro.,,,Pendiente
+31,El hundimiento de la casa Usher,Edgar Allan Poe,Misterio y suspenso,8°,PDF,Historia gótica de una familia y una mansión inquietante.,,,Pendiente
+32,El poder de las palabras,Edgar Allan Poe,Filosofía y relatos,8°,PDF,Diálogo fantástico sobre conocimiento y creación.,,,Pendiente
+33,El pozo y el péndulo,Edgar Allan Poe,Misterio y suspenso,8°,PDF,Un prisionero afronta peligros y temores extremos.,,,Pendiente
+34,El retrato ovalado,Edgar Allan Poe,Misterio y suspenso,7° 8°,PDF,Un retrato misterioso invita a reflexionar sobre el arte.,,,Pendiente
+35,El gato negro,Edgar Allan Poe,Misterio y suspenso,8°,PDF,Relato oscuro sobre violencia; culpa y consecuencias.,,,Pendiente
+36,La carta robada,Edgar Allan Poe,Misterio y detectives,7° 8°,PDF,Dupin resuelve un caso mediante observación y deducción.,,,Pendiente
+37,La durmiente,Edgar Allan Poe,Poesía y misterio,7° 8°,PDF,Poema de atmósfera nocturna y melancólica.,,,Pendiente
+38,La máscara de la Muerte Roja,Edgar Allan Poe,Misterio y suspenso,8°,PDF,Una fiesta intenta ignorar una epidemia devastadora.,,,Pendiente
+39,Las campanas,Edgar Allan Poe,Poesía,7° 8°,PDF,Poema sobre el sonido y el simbolismo de las campanas.,,,Pendiente
