@@ -2,3 +2,4 @@ id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado
 1,Charlie y la fábrica de chocolate,Roald Dahl,Literatura infantil,5° 6°,PDF,La aventura de Charlie Bucket y la extraordinaria fábrica de Willy Wonka.,,,Publicado
 2,Harry Potter y la cámara secreta,J. K. Rowling,Fantasía,6° 7° 8°,PDF,Una nueva aventura de Harry Potter en Hogwarts.,,,Publicado
 3,Papelucho en la clínica,Marcela Paz,Literatura chilena,5° 6°,PDF,Las peripecias de Papelucho durante una inesperada estadía en la clínica.,,,Publicado
+4,El secreto del río,BiblioÑuble,Relatos y comprensión,5° 6° 7° 8°,HTML,Relato original con preguntas de inferencia y reflexión,,./lecturas/el-secreto-del-rio.html,Publicado
