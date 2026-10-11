@@ -1,0 +1,38 @@
+BIBLIONUBLE - GUIA DE INSTALACION (version 1.0)
+
+1. GOOGLE SHEETS
+- Crea una hoja de calculo nueva.
+- Importa catalogo_ejemplo.csv (Archivo > Importar > Subir).
+- Mantén los encabezados exactamente como están: id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado.
+- Agrega una fila por recurso. En estado escribe Publicado para mostrar u Oculto para retirar.
+- En portada usa una URL HTTPS directa de imagen autorizada o deja vacío. En enlace usa un enlace público autorizado.
+- Archivo > Compartir > Publicar en la Web; selecciona la pestaña y el formato CSV. Pulsa Publicar.
+- Copia el enlace CSV que se genera. NO es el enlace normal de editar la hoja.
+- No incluyas datos personales de estudiantes ni información privada: la hoja publicada es pública.
+
+2. CONECTAR LA HOJA
+- Abre config.js con Bloc de notas.
+- Entre las comillas de csvUrl pega el enlace CSV publicado. Guarda.
+
+3. PUBLICAR EN GITHUB PAGES
+- En github.com crea una cuenta y un repositorio PUBLICO llamado biblionuble.
+- Sube los archivos de esta carpeta a la raíz del repositorio, incluida la carpeta icons (no el ZIP).
+- Settings > Pages > Build and deployment > Deploy from a branch > main > /(root) > Save.
+- Abre la URL https://TU_USUARIO.github.io/biblionuble/ cuando GitHub indique que el sitio está publicado.
+- No necesitas pagar dominio. El sitio se publica bajo HTTPS.
+
+4. INSTALAR EN CELULARES
+- Android: abrir la URL en Chrome > Instalar o Añadir a pantalla de inicio.
+- iPhone: abrir en Safari > Compartir > Añadir a pantalla de inicio.
+- Las opciones pueden variar por navegador y versión.
+
+5. AGREGAR LIBROS
+- Modifica la hoja de Google Sheets, no el código.
+- Espera algunos minutos a la publicación de cambios; vuelve a abrir o actualizar la aplicación.
+- Los archivos PDF no se almacenan en Sheets: se enlazan desde Drive u otros repositorios con permisos de lectura.
+
+NOTAS
+- La app guarda favoritos localmente. No hay usuarios ni panel privado.
+- La app puede abrirse sin conexión tras una visita previa, pero el catálogo remoto y los libros no se garantizan offline.
+- Los libros de muestra son enlaces de consulta, no una colección de PDF redistribuibles.
+- No publiques libros protegidos sin autorización.
