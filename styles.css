@@ -45,7 +45,7 @@
 
 /* Versión 25: escenas directas sin marcos ni miniportadas */
 .books .book .cover{position:relative!important;display:block!important;width:100%!important;height:235px!important;padding:0!important;margin:0!important;overflow:hidden!important;background:#dcecf3!important;border:0!important}
-.books .book .cover>img.book-scene{display:block!important;position:relative!important;width:100%!important;height:100%!important;object-fit:cover!important;border:0!important;border-radius:0!important;max-width:none!important}
+.books .book .cover>img.book-scene{display:block!important;position:relative!important;width:100%!important;height:100%!important;object-fit:contain!important;border:0!important;border-radius:0!important;max-width:none!important}
 .books .book .cover>img.book-scene[hidden]{display:none!important}
 .books .book .cover>.cover-fallback{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:linear-gradient(125deg,#127e9d,#e6a64c);color:#fff;text-align:center;padding:18px}
 .books .book .cover>.cover-fallback[hidden]{display:none!important}
@@ -98,3 +98,10 @@
 @media(max-width:600px){.cover-lettering{padding:9px 6px 15px;gap:6px}.cover-lettering strong{font-size:clamp(.95rem,4vw,1.22rem)}.cover-lettering small{font-size:.67rem}.cover-symbol{font-size:4.5rem}.cover-stamp{font-size:.48rem}}
 
 .cover-fallback[hidden]{display:none!important}
+
+/* Móvil: portadas completas sin recortes y botón siempre en su franja */
+.books .book .cover>img.book-scene{object-fit:contain!important;object-position:center center!important;background:#eef3fa!important}
+.new-header .install-strip{display:flex!important;position:relative!important;clear:both!important;isolation:isolate!important;z-index:50!important}
+.new-header .install-strip #install{box-sizing:border-box!important;max-width:210px!important;width:190px!important;height:54px!important;min-height:54px!important;overflow:hidden!important;flex-shrink:0!important;transform:none!important;animation:none!important}
+.new-header .install-strip #install .install-word{font-size:29px!important;line-height:1!important}
+@media(max-width:600px){.books .book .cover{aspect-ratio:3/4!important}.books .book .cover>img.book-scene{object-fit:contain!important}}
