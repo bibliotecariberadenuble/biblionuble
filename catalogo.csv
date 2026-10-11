@@ -3,3 +3,7 @@ id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado
 2,Harry Potter y la cámara secreta,J. K. Rowling,Fantasía,6° 7° 8°,PDF,Una nueva aventura de Harry Potter en Hogwarts.,,,Pendiente
 3,Papelucho en la clínica,Marcela Paz,Literatura chilena,5° 6°,PDF,Las peripecias de Papelucho durante una inesperada estadía en la clínica.,,,Pendiente
 4,El secreto del río,BiblioÑuble,Relatos y comprensión,5° 6° 7° 8°,HTML,Relato original con preguntas de inferencia y reflexión,,./lecturas/el-secreto-del-rio.html,Publicado
+5,La Edad de Oro: prólogo,José Martí,Cuentos y formación,5° 6° 7°,WEB,Texto original de José Martí sobre lectura infancia y conocimiento,,https://es.wikisource.org/wiki/La_Edad_de_Oro/Pr%C3%B3logo,Publicado
+6,El almohadón de pluma,Horacio Quiroga,Misterio y suspenso,7° 8°,WEB,Cuento clásico para analizar atmósfera e inferencias,,https://es.wikisource.org/wiki/El_almohad%C3%B3n_de_pluma,Publicado
+7,El Lazarillo de Tormes,Anónimo,Clásicos en español,7° 8°,WEB,Novela picaresca clásica con lenguaje antiguo; lectura acompañada,,https://es.wikisource.org/wiki/El_Lazarillo_de_Tormes,Publicado
+8,La Edad de Oro: La última página,José Martí,Cuentos y formación,5° 6° 7°,WEB,Reflexión sobre la lectura la cultura y la formación de jóvenes,,https://es.wikisource.org/wiki/La_Edad_de_Oro/La_%C3%BAltima_p%C3%A1gina,Publicado
