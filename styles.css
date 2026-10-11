@@ -96,3 +96,5 @@
 .cover-stamp{position:absolute;top:8px;left:8px;z-index:4;font-size:.58rem;letter-spacing:.12em;font-weight:900;color:#fff;background:#0004;padding:4px 6px;border-radius:4px}
 .cover-fallback{padding:18px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;color:#17365e}.cover-fallback span{font-size:3rem}.cover-fallback strong{font-size:1.2rem}
 @media(max-width:600px){.cover-lettering{padding:9px 6px 15px;gap:6px}.cover-lettering strong{font-size:clamp(.95rem,4vw,1.22rem)}.cover-lettering small{font-size:.67rem}.cover-symbol{font-size:4.5rem}.cover-stamp{font-size:.48rem}}
+
+.cover-fallback[hidden]{display:none!important}
