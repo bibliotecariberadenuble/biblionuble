@@ -74,3 +74,11 @@
 @keyframes install-spotlight{0%,100%{box-shadow:0 7px 0 #aa5b00,0 15px 28px #0b264c55}50%{box-shadow:0 7px 0 #aa5b00,0 0 0 7px #ffda5070,0 18px 32px #0b264c65}}
 @media(max-width:760px){.topnav:has(#install:not([hidden])){flex-direction:column;align-items:stretch}.topnav .brand{text-align:center}#install:not([hidden]){width:100%;max-width:none;min-width:0;min-height:130px;grid-template-columns:56px minmax(0,1fr);padding:15px 12px!important}#install .install-emoji{font-size:3.3rem}#install .install-main{font-size:clamp(1.24rem,5vw,1.7rem)}#install .install-action{font-size:clamp(1.08rem,4.3vw,1.45rem)}#install small{font-size:.95rem!important}}
 @media(prefers-reduced-motion:reduce){#install:not([hidden]){animation:none!important}}
+
+/* Botón infantil: una palabra gigante y alegre */
+#install:not([hidden]){display:flex!important;align-items:center!important;justify-content:center!important;width:min(100%,440px)!important;min-width:240px!important;min-height:105px!important;padding:12px 26px!important;border:6px solid #fff!important;border-radius:999px!important;background:linear-gradient(135deg,#ff53b0 0%,#ff8b39 50%,#ffdb3e 100%)!important;box-shadow:0 9px 0 #a42d72,0 17px 30px #42236c55!important;text-align:center!important;transform:rotate(-2deg);animation:install-kids 2.7s ease-in-out infinite!important;cursor:pointer!important}
+#install .install-word{display:block!important;font-family:'Trebuchet MS','Arial Rounded MT Bold',system-ui,sans-serif!important;font-size:clamp(2.5rem,5.5vw,4.1rem)!important;font-weight:1000!important;line-height:1.05!important;letter-spacing:.045em!important;color:#fff!important;-webkit-text-stroke:1.5px #682e9e;text-shadow:3px 4px 0 #682e9e,0 0 12px #ffffff70!important}
+#install:hover,#install:focus-visible{animation-play-state:paused!important;transform:rotate(0deg) scale(1.055)!important;outline:4px solid #632ac1;outline-offset:4px}
+@keyframes install-kids{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(2deg) scale(1.035)}}
+@media(max-width:760px){#install:not([hidden]){width:100%!important;max-width:440px!important;min-width:0!important;min-height:105px!important;margin-inline:auto!important}#install .install-word{font-size:clamp(2.4rem,11vw,3.9rem)!important}}
+@media(prefers-reduced-motion:reduce){#install:not([hidden]){animation:none!important;transform:none!important}}
