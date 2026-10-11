@@ -9,7 +9,7 @@ id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado
 8,La Edad de Oro: La última página,José Martí,Cuentos y formación,5° 6° 7°,WEB,Reflexión sobre la lectura la cultura y la formación de jóvenes,./portadas/oro.svg,https://es.wikisource.org/wiki/La_Edad_de_Oro/La_%C3%BAltima_p%C3%A1gina,Publicado
 9,Fundación,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un matemático anticipa la caída de un imperio galáctico y busca preservar el conocimiento.,./portadas/fundacion.svg,,Pendiente
 10,La Araucana,Alonso de Ercilla,Poesía épica e historia,7° 8°,PDF,Poema épico sobre la conquista de Chile y la resistencia mapuche.,./portadas/araucana.svg,,Pendiente
-11,La guerra de las galaxias: Una nueva esperanza,George Lucas,Ciencia ficción,6° 7° 8°,PDF,Aventura espacial de resistencia frente a un imperio.,,,Pendiente
+11,La guerra de las galaxias: Una nueva esperanza,George Lucas,Ciencia ficción,6° 7° 8°,PDF,Aventura espacial de resistencia frente a un imperio.,./portadas/aventura-espacial.svg,,Pendiente
 12,La sirenita,Hans Christian Andersen (adaptación sin acreditar),Cuentos clásicos,5° 6°,PDF,Una joven sirena sueña con conocer el mundo de la superficie.,./portadas/sirenita.svg,,Pendiente
 13,La última pregunta,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un relato sobre la humanidad y los límites del conocimiento científico.,./portadas/pregunta.svg,,Pendiente
 14,Las aventuras de Sherlock Holmes,Arthur Conan Doyle,Misterio y detectives,7° 8°,PDF,Casos que se resuelven mediante observación e inferencias.,./portadas/sherlock.svg,,Pendiente
