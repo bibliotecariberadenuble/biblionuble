@@ -7,15 +7,15 @@ id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado
 6,El almohadón de pluma,Horacio Quiroga,Misterio y suspenso,7° 8°,WEB,Cuento clásico para analizar atmósfera e inferencias,./portadas/almohadon.svg,https://es.wikisource.org/wiki/El_almohad%C3%B3n_de_pluma,Publicado
 7,El Lazarillo de Tormes,Anónimo,Clásicos en español,7° 8°,WEB,Novela picaresca clásica con lenguaje antiguo; lectura acompañada,./portadas/lazarillo.svg,https://es.wikisource.org/wiki/El_Lazarillo_de_Tormes,Publicado
 8,La Edad de Oro: La última página,José Martí,Cuentos y formación,5° 6° 7°,WEB,Reflexión sobre la lectura la cultura y la formación de jóvenes,./portadas/oro.svg,https://es.wikisource.org/wiki/La_Edad_de_Oro/La_%C3%BAltima_p%C3%A1gina,Publicado
-9,Fundación,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un matemático anticipa la caída de un imperio galáctico y busca preservar el conocimiento.,,,Pendiente
-10,La Araucana,Alonso de Ercilla,Poesía épica e historia,7° 8°,PDF,Poema épico sobre la conquista de Chile y la resistencia mapuche.,,,Pendiente
+9,Fundación,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un matemático anticipa la caída de un imperio galáctico y busca preservar el conocimiento.,./portadas/fundacion.svg,,Pendiente
+10,La Araucana,Alonso de Ercilla,Poesía épica e historia,7° 8°,PDF,Poema épico sobre la conquista de Chile y la resistencia mapuche.,./portadas/araucana.svg,,Pendiente
 11,La guerra de las galaxias: Una nueva esperanza,George Lucas,Ciencia ficción,6° 7° 8°,PDF,Aventura espacial de resistencia frente a un imperio.,,,Pendiente
-12,La sirenita,Hans Christian Andersen (adaptación sin acreditar),Cuentos clásicos,5° 6°,PDF,Una joven sirena sueña con conocer el mundo de la superficie.,,,Pendiente
-13,La última pregunta,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un relato sobre la humanidad y los límites del conocimiento científico.,,,Pendiente
-14,Las aventuras de Sherlock Holmes,Arthur Conan Doyle,Misterio y detectives,7° 8°,PDF,Casos que se resuelven mediante observación e inferencias.,,,Pendiente
-15,Las aventuras de Tom Bombadil,J. R. R. Tolkien,Fantasía y poesía,7° 8°,PDF,Poemas y aventuras ambientados en la Tierra Media.,,,Pendiente
-16,Los tres mosqueteros,Alejandro Dumas,Aventura histórica,7° 8°,PDF,D Artagnan y sus compañeros viven intrigas en la Francia del siglo XVII.,,,Pendiente
-17,Mujercitas,Louisa May Alcott,Narrativa clásica,6° 7° 8°,PDF,La vida de cuatro hermanas y sus aprendizajes familiares.,,,Pendiente
-18,Peter Pan,J. M. Barrie,Fantasía y aventuras,5° 6° 7°,PDF,Wendy y sus hermanos descubren Nunca Jamás.,,,Pendiente
-19,Robin Hood,Anónimo (adaptación sin acreditar),Aventuras y leyendas,5° 6° 7°,PDF,Relato sobre la leyenda del arquero de Sherwood.,,,Pendiente
-20,Yo robot,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Historias sobre robots y dilemas éticos de la tecnología.,,,Pendiente
+12,La sirenita,Hans Christian Andersen (adaptación sin acreditar),Cuentos clásicos,5° 6°,PDF,Una joven sirena sueña con conocer el mundo de la superficie.,./portadas/sirenita.svg,,Pendiente
+13,La última pregunta,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un relato sobre la humanidad y los límites del conocimiento científico.,./portadas/pregunta.svg,,Pendiente
+14,Las aventuras de Sherlock Holmes,Arthur Conan Doyle,Misterio y detectives,7° 8°,PDF,Casos que se resuelven mediante observación e inferencias.,./portadas/sherlock.svg,,Pendiente
+15,Las aventuras de Tom Bombadil,J. R. R. Tolkien,Fantasía y poesía,7° 8°,PDF,Poemas y aventuras ambientados en la Tierra Media.,./portadas/bombadil.svg,,Pendiente
+16,Los tres mosqueteros,Alejandro Dumas,Aventura histórica,7° 8°,PDF,D Artagnan y sus compañeros viven intrigas en la Francia del siglo XVII.,./portadas/mosqueteros.svg,,Pendiente
+17,Mujercitas,Louisa May Alcott,Narrativa clásica,6° 7° 8°,PDF,La vida de cuatro hermanas y sus aprendizajes familiares.,./portadas/mujercitas.svg,,Pendiente
+18,Peter Pan,J. M. Barrie,Fantasía y aventuras,5° 6° 7°,PDF,Wendy y sus hermanos descubren Nunca Jamás.,./portadas/peterpan.svg,,Pendiente
+19,Robin Hood,Anónimo (adaptación sin acreditar),Aventuras y leyendas,5° 6° 7°,PDF,Relato sobre la leyenda del arquero de Sherwood.,./portadas/robinhood.svg,,Pendiente
+20,Yo robot,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Historias sobre robots y dilemas éticos de la tecnología.,./portadas/yorobot.svg,,Pendiente
