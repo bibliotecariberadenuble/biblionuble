@@ -82,3 +82,17 @@
 .book h3{font-size:1.08rem!important;line-height:1.3!important;overflow-wrap:anywhere}
 @media(max-width:600px){.books{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}.cover{aspect-ratio:3/4!important}.bookbody{padding:10px!important}.book h3{font-size:.98rem!important}.author{font-size:.82rem!important}.description{font-size:.8rem!important}.read{padding:11px 7px!important;font-size:.9rem!important}}
 @media(max-width:360px){.books{grid-template-columns:1fr!important}.cover{max-height:380px}}
+
+/* Portadas ilustradas originales y diferenciadas por libro */
+.illustrated-cover{position:relative;width:100%;height:100%;min-height:0;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;background:var(--cover-dark);color:#fff;border:7px solid #ffffff16;box-shadow:inset 0 0 0 2px #ffffff35}
+.cover-sky{position:absolute;inset:0 0 36%;background:linear-gradient(150deg,var(--cover-dark),var(--cover-mid));overflow:hidden}
+.cover-orbit{position:absolute;left:50%;top:8%;width:70%;aspect-ratio:1;border:2px solid #ffffff70;border-radius:50%;transform:translateX(-50%);box-shadow:0 0 0 18px #ffffff13,0 0 0 36px #ffffff0a}
+.cover-symbol{position:absolute;top:14%;left:0;right:0;text-align:center;font-family:Georgia,serif;font-size:clamp(4rem,9vw,6.3rem);font-weight:bold;color:var(--cover-light);text-shadow:0 5px 16px #0005;line-height:1.3;z-index:2}
+.cover-hill{position:absolute;bottom:-24%;width:140%;height:50%;left:-20%;background:var(--cover-light);border-radius:50% 50% 0 0;opacity:.75;transform:rotate(-8deg)}
+.cover-hill.hill-two{bottom:-32%;left:4%;background:var(--cover-dark);transform:rotate(13deg);opacity:.85}
+.cover-lettering{position:relative;z-index:3;padding:14px 10px 23px;background:linear-gradient(0deg,var(--cover-dark) 70%,transparent);min-height:43%;display:flex;flex-direction:column;justify-content:flex-end;gap:9px;text-align:center}
+.cover-lettering strong{font-family:Georgia,'Trebuchet MS',serif;font-size:clamp(1.05rem,2.2vw,1.5rem);line-height:1.14;overflow-wrap:anywhere;text-shadow:0 2px 5px #0007}
+.cover-lettering small{font-size:.78rem;font-weight:700;color:var(--cover-light);line-height:1.2}
+.cover-stamp{position:absolute;top:8px;left:8px;z-index:4;font-size:.58rem;letter-spacing:.12em;font-weight:900;color:#fff;background:#0004;padding:4px 6px;border-radius:4px}
+.cover-fallback{padding:18px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;color:#17365e}.cover-fallback span{font-size:3rem}.cover-fallback strong{font-size:1.2rem}
+@media(max-width:600px){.cover-lettering{padding:9px 6px 15px;gap:6px}.cover-lettering strong{font-size:clamp(.95rem,4vw,1.22rem)}.cover-lettering small{font-size:.67rem}.cover-symbol{font-size:4.5rem}.cover-stamp{font-size:.48rem}}
