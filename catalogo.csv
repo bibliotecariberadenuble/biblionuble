@@ -12,10 +12,10 @@ id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado
 11,La guerra de las galaxias: Una nueva esperanza,George Lucas,Ciencia ficción,6° 7° 8°,PDF,Aventura espacial de resistencia frente a un imperio.,./portadas/aventura-espacial.svg,,Pendiente
 12,La sirenita,Hans Christian Andersen (adaptación sin acreditar),Cuentos clásicos,5° 6°,PDF,Una joven sirena sueña con conocer el mundo de la superficie.,./portadas/sirenita.svg,,Pendiente
 13,La última pregunta,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un relato sobre la humanidad y los límites del conocimiento científico.,./portadas/pregunta.svg,,Pendiente
-14,Las aventuras de Sherlock Holmes,Arthur Conan Doyle,Misterio y detectives,7° 8°,PDF,Casos que se resuelven mediante observación e inferencias.,./portadas/sherlock.svg,,Pendiente
+14,Las aventuras de Sherlock Holmes,Arthur Conan Doyle,Misterio y detectives,7° 8°,PDF,Casos que se resuelven mediante observación e inferencias.,https://commons.wikimedia.org/wiki/Special:FilePath/Sidney_Paget_-_The_Adventure_of_the_Noble_Bachelor_01.jpg,,Pendiente
 15,Las aventuras de Tom Bombadil,J. R. R. Tolkien,Fantasía y poesía,7° 8°,PDF,Poemas y aventuras ambientados en la Tierra Media.,./portadas/bombadil.svg,,Pendiente
-16,Los tres mosqueteros,Alejandro Dumas,Aventura histórica,7° 8°,PDF,D Artagnan y sus compañeros viven intrigas en la Francia del siglo XVII.,./portadas/mosqueteros.svg,,Pendiente
-17,Mujercitas,Louisa May Alcott,Narrativa clásica,6° 7° 8°,PDF,La vida de cuatro hermanas y sus aprendizajes familiares.,./portadas/mujercitas.svg,,Pendiente
-18,Peter Pan,J. M. Barrie,Fantasía y aventuras,5° 6° 7°,PDF,Wendy y sus hermanos descubren Nunca Jamás.,./portadas/peterpan.svg,,Pendiente
+16,Los tres mosqueteros,Alejandro Dumas,Aventura histórica,7° 8°,PDF,D Artagnan y sus compañeros viven intrigas en la Francia del siglo XVII.,https://commons.wikimedia.org/wiki/Special:FilePath/Les_Trois_Mousquetaires_-_illustrations_de_Maurice_Leloir.jpg,,Pendiente
+17,Mujercitas,Louisa May Alcott,Narrativa clásica,6° 7° 8°,PDF,La vida de cuatro hermanas y sus aprendizajes familiares.,https://commons.wikimedia.org/wiki/Special:FilePath/Little_Women_-_cover.png,,Pendiente
+18,Peter Pan,J. M. Barrie,Fantasía y aventuras,5° 6° 7°,PDF,Wendy y sus hermanos descubren Nunca Jamás.,https://commons.wikimedia.org/wiki/Special:FilePath/Peter_Pan_1915_cover.jpg,,Pendiente
 19,Robin Hood,Anónimo (adaptación sin acreditar),Aventuras y leyendas,5° 6° 7°,PDF,Relato sobre la leyenda del arquero de Sherwood.,./portadas/robinhood.svg,,Pendiente
 20,Yo robot,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Historias sobre robots y dilemas éticos de la tecnología.,./portadas/yorobot.svg,,Pendiente
