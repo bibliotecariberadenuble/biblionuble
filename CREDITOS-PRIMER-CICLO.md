@@ -1,6 +1,6 @@
 # Lecturas de Primer Ciclo
 
-Selección para 1.º a 4.º básico. Los cursos son orientativos. Cada PDF es la edición ilustrada en español de Storybooks Canada, descargada de su [colección en español](https://www.storybookscanada.globalstorybooks.net/downloads/) y reproducida íntegramente desde [African Storybook](https://www.africanstorybook.org/). También se conservan las páginas de créditos y licencia. Las miniaturas del catálogo reproducen la ilustración de portada y su atribución figura en cada ficha.
+Selección para 1.º a 4.º básico. Los cursos son orientativos. Los títulos del primer bloque usan la edición ilustrada en español de Storybooks Canada, descargada de su [colección en español](https://www.storybookscanada.globalstorybooks.net/downloads/). Los relatos proceden de [African Storybook](https://www.africanstorybook.org/). También se conservan las páginas de créditos y licencia. Las miniaturas del catálogo reproducen la ilustración de portada y su atribución figura en cada ficha.
 
 BiblioÑuble ofrece estos archivos con fines educativos, sin cobro, publicidad ni acceso condicionado. Las ediciones CC BY-NC se alojan para ese uso. El público debe respetar la licencia de cada obra al reutilizarla.
 
@@ -269,3 +269,79 @@ SHA-256 de la copia alojada: `400ef9dc654c7a6e4bc19a6bd96c4587827faa95f2ceedbdaa
 Texto de Adelheid Marie Bwire. Ilustraciones de Melany Pietersen. Traducción de Karina Vásquez. African Storybook, edición de Storybooks Canada. [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). [Ficha de origen](https://www.storybookscanada.ca/stories/es/0342/) · [PDF original](https://www.storybookscanada.ca/pdf/es/es-0342_punishment.pdf) · [Copia alojada](libros/primer-ciclo/es-0342_punishment.pdf).
 
 SHA-256 de la copia alojada: `eceed2d189f65c24d0e96ef9b7c6ad2edae66b05bcbf8bed4887b450898c9b89`.
+
+## Ediciones de StoryWeaver distribuidas por Free Kids Books
+
+Los PDF conservan la portada, el relato completo, las ilustraciones y todas las páginas de atribución de StoryWeaver. La única edición de BiblioÑuble consiste en retirar la última hoja promocional añadida por Free Kids Books. La miniatura reproduce la portada original en formato WebP.
+
+### Amigos
+
+**1.º y 2.º básico · Cuento ilustrado · 20 páginas.** Las frases repetidas permiten anticipar los gustos de cada personaje y conversar sobre juegos compartidos. Autónoma. El original presenta algunas tildes omitidas.
+
+Texto de Hlengiwe Zondi , Zimbili Dlamini. Ilustraciones de Catherine Groenewald. Traducción de Jessica Hammer. African Storybook Initiative. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/amigos-friends-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2020/08/FKB-Prathams-Amigos-Friends-Spanish.pdf) · [Copia alojada](libros/primer-ciclo/amigos.pdf).
+
+SHA-256 de la copia alojada: `b7e0919a85181cb9d2c9199f3436f698581e81c89452ac8ec8a9d60464d63670`.
+
+### ¡Dime ahora! – Bueno para ti
+
+**1.º y 2.º básico · Cuento ilustrado · 15 páginas.** El diálogo repetido permite distinguir preguntas de respuestas y debatir para qué sirven las rutinas. Acompañamiento sugerido para explicar las razones detrás de cada rutina.
+
+Texto de Madhav Chavan. Ilustraciones de Rijuta Ghate. Traducción de David Montero. Pratham Books. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/dime-ahora-bueno-para-ti-tell-me-now-good-for-you-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2020/08/FKB-Prathams-¡Dime-ahora-Bueno-para-ti-Tell-Me-Now-Spanish.pdf) · [Copia alojada](libros/primer-ciclo/bueno-para-ti.pdf).
+
+SHA-256 de la copia alojada: `d7ab7aa347eba2607fdacfbe5f4a31c64b7586287018a4d330a65a7b2819c4bd`.
+
+### El dolor de muelas real
+
+**2.º y 3.º básico · Cuento ilustrado · 15 páginas.** El cuento permite ordenar las propuestas de los animales e inferir por qué funciona la del ratón. Acompañamiento sugerido. El texto usa un insulto leve y presenta cuidados dentales de fantasía.
+
+Texto de Sanjiv Jaiswal 'Sanjay'. Ilustraciones de Ajit Narayan. Traducción de Hannah Peter. Pratham Books. Versión intermedia de Manisha Chaudhry. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/el-dolor-de-muelas-real-the-royal-toothache-colouring-and-hygiene-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2020/08/El-dolor-de-muelas-real-The-Royal-Toothache-Colouring-and-hygiene-Spanish.pdf) · [Copia alojada](libros/primer-ciclo/dolor-de-muelas-real.pdf).
+
+SHA-256 de la copia alojada: `e2b8e9ac2f1b1aacc116277381342bb2eaa69ae3e2442ad26c19c40440df7d9c`.
+
+### El enfado de Akku
+
+**3.º y 4.º básico · Cuento ilustrado · 20 páginas.** Los dibujos de Akku permiten reconstruir lo ocurrido en la escuela y explicar cómo cambia su ánimo. Lectura guiada. Hay una caída leve, burlas, insultos leves y un gesto de afecto físico que incomoda a Akku.
+
+Texto de Vinayak Varma. Ilustraciones de Vinayak Varma. Traducción de Aboli Chowdhary. Pratham Books. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/el-enfado-de-akku-angry-akku-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2020/10/FKB-Prathams-El-enfado-de-Akku-Angry-Akku-Spanish.pdf) · [Copia alojada](libros/primer-ciclo/el-enfado-de-akku.pdf).
+
+SHA-256 de la copia alojada: `d9927705f1b19f88d17e116494ebae94ec5edc52144e342753536621efa72675`.
+
+### Mi hermano y yo
+
+**1.º y 2.º básico · Cuento ilustrado · 15 páginas.** Las ilustraciones sirven como pistas para completar palabras y describir el día de los hermanos. Autónoma. Aclarar qué es el críquet si hace falta.
+
+Texto de Kanchan Bannerjee. Ilustraciones de Pallak Goswamy. Traducción de Carlos Garcia. Pratham Books. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/mi-hermano-y-yo-my-brother-and-me-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2020/08/FKB-Prathams-Mi-hermano-y-yo-My-Brother-and-Me-Spanish.pdf) · [Copia alojada](libros/primer-ciclo/mi-hermano-y-yo.pdf).
+
+SHA-256 de la copia alojada: `e5f9b26521673aafd973423a8c39017823ce7699b11e56ddcc7327d75ef8d720`.
+
+### Mi mejor amiga
+
+**1.º y 2.º básico · Cuento ilustrado · 15 páginas.** El espejo ofrece pistas para interpretar quién es la amiga y distinguir realidad y sueño. Autónoma.
+
+Texto de Anupa Lal. Ilustraciones de Suvidha Mistry. Traducción de Delfina Grossi. Pratham Books. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/mi-mejor-amiga-my-best-friend-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2020/08/FKB-Prathams-Mi-Mejor-Amiga-My-Best-Friend-Spanish.pdf) · [Copia alojada](libros/primer-ciclo/mi-mejor-amiga.pdf).
+
+SHA-256 de la copia alojada: `94a48fc22b8763e8ff05eb2d83237c492e25e2d373cdb7b2c3463dc0c7438b35`.
+
+### Nuevo gatito
+
+**1.º y 2.º básico · Cuento ilustrado · 11 páginas.** La selección de un gato permite comparar características y explicar cómo llega la familia a un acuerdo. Autónoma.
+
+Texto de Ritah Katetemera. Ilustraciones de Marion Drew. Traducción de Javier Sánchez Martín. African Storybook Initiative. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/nuevo-gatito-new-pussy-cat-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2020/08/FKB-Prathams-Nuevo-gatito-New-Pussy-Cat-Spanish.pdf) · [Copia alojada](libros/primer-ciclo/nuevo-gatito.pdf).
+
+SHA-256 de la copia alojada: `0de14eda25e42611f3e7262c259930816e27e55a060953444f35c5d3e1384e6b`.
+
+### ¡Puedo hacer cosas!
+
+**1.º y 2.º básico · Cuento ilustrado · 15 páginas.** La repetición apoya la fluidez y permite ordenar lo que el niño dibuja o hace con papel. Autónoma. El final permite conversar sobre lo que se aprende a distintas edades.
+
+Texto de Mini Shrinivasan. Ilustraciones de Tanvee Nabar. Traducción de Aboli Chowdhary. Pratham Books. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/puedo-hacer-cosas/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2019/11/FKB-Stories-Puedo-hacer-cosas-Spanish-I-Can-Make-Things.pdf) · [Copia alojada](libros/primer-ciclo/puedo-hacer-cosas.pdf).
+
+SHA-256 de la copia alojada: `ba410c1f6e66b9499d1f5ea983573a3d1257760478c8ba97ba7e16ac1281c045`.
+
+### ¡Todo por culpa de la gata!
+
+**3.º y 4.º básico · Cuento ilustrado · 12 páginas.** La cadena de excusas permite reconstruir causas y consecuencias y evaluar si la explicación resulta creíble. Autónoma. Aclarar deberes como tareas y comentar las escenas cómicas de riesgo leve.
+
+Texto de Anushka Ravishankar. Ilustraciones de Priya Kuriyan. Traducción de Sandra Alguacil Medina. StoryWeaver. Edición de StoryWeaver, plataforma de Pratham Books. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ficha de origen](https://freekidsbooks.org/todo-por-culpa-de-la-gata-its-all-the-cats-fault-in-spanish/) · [PDF de origen](https://freekidsbooks.org/wp-content/uploads/2019/11/FKB-Stories-Todo-por-culpa-de-la-gata-Its-All-The-Cats-Fault-in-Span.pdf) · [Copia alojada](libros/primer-ciclo/todo-por-culpa-de-la-gata.pdf).
+
+SHA-256 de la copia alojada: `20cffe52859aa86e33cb296f4d065f5e46dcef613a9af4721a3bf0e27211f955`.
