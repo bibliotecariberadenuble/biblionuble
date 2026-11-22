@@ -1,4 +1,4 @@
-const $=s=>document.querySelector(s);let data=[],pending=[],category='Todas',favsOnly=false;let favorites;try{favorites=new Set(JSON.parse(localStorage.getItem('biblionuble-favoritos')||'[]'))}catch{favorites=new Set()}
+const $=s=>document.querySelector(s);let data=[],pending=[],favsOnly=false;let favorites;try{favorites=new Set(JSON.parse(localStorage.getItem('biblionuble-favoritos')||'[]'))}catch{favorites=new Set()}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function safeUrl(s){if(!String(s??'').trim())return '';try{const u=new URL(s,location.href);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
 function csvParse(t){let rows=[],row=[],cell='',quoted=false;for(let i=0;i<t.length;i++){let c=t[i];if(c==='"'){if(quoted&&t[i+1]==='"'){cell+='"';i++}else quoted=!quoted}else if(c===','&&!quoted){row.push(cell);cell=''}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&t[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(x=>x.trim()))rows.push(row);const headers=(rows.shift()||[]).map(x=>x.trim().toLowerCase().replace(/^\ufeff/,''));if(!headers.includes('titulo')||!headers.includes('enlace'))throw Error('Faltan columnas titulo y enlace');return rows.map(r=>Object.fromEntries(headers.map((h,i)=>[h,(r[i]||'').trim()])))}
@@ -59,21 +59,9 @@ function render() {
   const matchesSearch = book => [book.titulo, book.autor, book.categoria, book.descripcion]
     .join(' ').toLocaleLowerCase('es').includes(query);
   const matchesCourse = book => !course || (book.curso || '').split(/\s+/).includes(course);
-  const categories = ['Todas', ...new Set(data.map(book => book.categoria))];
-
-  $('#categories').replaceChildren(...categories.map(name => {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.textContent = name;
-    button.className = category === name ? 'active' : '';
-    button.setAttribute('aria-pressed', String(category === name));
-    button.onclick = () => { category = name; render(); };
-    return button;
-  }));
   $('#favoritesToggle').classList.toggle('active', favsOnly);
 
-  const visible = data.filter(book => (category === 'Todas' || book.categoria === category)
-    && matchesSearch(book) && matchesCourse(book) && (!favsOnly || favorites.has(book.id)));
+  const visible = data.filter(book => matchesSearch(book) && matchesCourse(book) && (!favsOnly || favorites.has(book.id)));
   renderShelf('#books', '#count', visible.filter(book => book.categoria !== firstCycleCategory && !['segundo-ciclo', 'educacion-inicial'].includes(book.seccion)),
     bookCard, 'No encontramos libros con estos filtros.');
   renderShelf('#primerCicloBooks', '#primerCicloCount', visible.filter(book => book.categoria === firstCycleCategory),
