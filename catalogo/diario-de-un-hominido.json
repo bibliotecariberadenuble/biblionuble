@@ -7,7 +7,8 @@
   "editor": "Profesor Miguel Méndez Bravo (corrección de textos)",
   "permission": "Usuario declara autorización de estudiantes y apoderados",
   "source_file": "EL DIARIO DE UN HOMINIDO.docx",
-  "status": "preparado_para_publicacion",
-  "published": false,
-  "notes": "PDF convertido y comprobado localmente; aún falta subir el archivo binario al alojamiento web y vincularlo desde el catálogo."
+  "status": "published_html",
+  "published": true,
+  "notes": "Lectura web completa publicada; PDF original aún no alojado en GitHub.",
+  "public_url": "https://bibliotecariberadenuble.github.io/biblionuble/lecturas/el-diario-de-un-hominido.html"
 }
