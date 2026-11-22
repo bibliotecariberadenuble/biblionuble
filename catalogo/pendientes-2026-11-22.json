@@ -1,0 +1,122 @@
+{
+  "project": "BiblioÑuble",
+  "batch": "2026-11-22",
+  "publication_status": "pending_rights_review",
+  "notes": "No usar este inventario para habilitar lectura o descarga pública sin verificar los derechos de cada edición y traducción. Autorización solicitada a hola@elejandria.com el 2026-11-22 para 18 ediciones de Elejandría.",
+  "books": [
+    {
+      "title": "Moby Dick",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "El extraño caso del Dr. Jekyll y Mr. Hyde",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Peter Pan y Wendy",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Heidi",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Las aventuras de Pinocho",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "La isla del tesoro",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "El libro de la selva",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "El maravilloso mago de Oz",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Veinte mil leguas de viaje submarino",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "La vuelta al mundo en ochenta días",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Los tres mosqueteros",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Romeo y Julieta",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Drácula",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Frankenstein",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "La sombra sobre Innsmouth",
+      "source": "otra fuente aportada por usuario",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "La Odisea",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Crimen y castigo",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "Don Quijote de la Mancha",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    },
+    {
+      "title": "El principito",
+      "source": "Elejandría (PDF aportado por usuario)",
+      "status": "pending_authorization_or_verification",
+      "published": false
+    }
+  ]
+}
