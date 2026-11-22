@@ -29,9 +29,34 @@
     return anchor;
   }
 
+  function decorateSocialLink(element, name) {
+    const id = name.toLowerCase();
+    element.className = 'social-link social-' + id;
+    const label = document.createElement('span');
+    label.className = 'social-label';
+    label.textContent = name;
+    if (id === 'linkedin') {
+      const monogram = document.createElement('span');
+      monogram.className = 'social-monogram';
+      monogram.textContent = 'in';
+      monogram.setAttribute('aria-hidden', 'true');
+      element.replaceChildren(monogram, label);
+      return;
+    }
+    const ns = 'http://www.w3.org/2000/svg';
+    const icon = document.createElementNS(ns, 'svg');
+    icon.setAttribute('class', 'social-icon');
+    icon.setAttribute('aria-hidden', 'true');
+    icon.setAttribute('focusable', 'false');
+    const mark = document.createElementNS(ns, 'use');
+    mark.setAttribute('href', './assets/redes-sociales.svg#' + id);
+    icon.append(mark);
+    element.replaceChildren(icon, label);
+  }
+
   for (const [name, url] of networks) {
     const anchor = link(name, url);
-    anchor.className = 'social-link';
+    decorateSocialLink(anchor, name);
     anchor.setAttribute('aria-label', 'Compartir en ' + name);
     shareLinks.append(anchor);
   }
@@ -52,14 +77,14 @@
 
   for (const [name, url] of [['Instagram', 'https://www.instagram.com/'], ['TikTok', 'https://www.tiktok.com/']]) {
     const anchor = link(name, url);
-    anchor.className = 'social-link';
+    decorateSocialLink(anchor, name);
     anchor.title = 'Copiar el enlace y abrir ' + name;
     anchor.setAttribute('aria-label', anchor.title);
     anchor.addEventListener('click', copyLink);
     shareLinks.append(anchor);
   }
   const more = document.createElement('button');
-  more.className = 'social-link';
+  more.className = 'social-link social-more';
   more.type = 'button';
   more.textContent = navigator.share ? 'Más opciones' : 'Copiar enlace';
   more.addEventListener('click', async () => {
@@ -79,6 +104,38 @@
   }
   badge.addEventListener('error', showCounterError);
   if (badge.complete && !badge.naturalWidth) showCounterError();
+
+  // The first image records the page visit. Refreshes only read the same total.
+  const counterPage = new URL(badge.src);
+  counterPage.pathname = '/api/urns' + counterPage.pathname.replace(/\.svg$/, '');
+  counterPage.search = '';
+  const counterSnapshot = new URL('https://img.shields.io/badge/dynamic/json');
+  counterSnapshot.search = new URLSearchParams({
+    url: counterPage.href, query: '$.total', label: 'Visitas',
+    color: '176c55', style: 'flat-square', cacheSeconds: '300'
+  });
+  const counterRefreshInterval = 5 * 60 * 1000;
+  let lastCounterRefresh = Date.now();
+  async function refreshCounter() {
+    if (document.hidden || Date.now() - lastCounterRefresh < counterRefreshInterval) return;
+    lastCounterRefresh = Date.now();
+    try {
+      const svg = await request(counterSnapshot.href, 'text');
+      const snapshot = new DOMParser().parseFromString(svg, 'image/svg+xml');
+      const match = /^Visitas:\s*([\d,]+)$/.exec(snapshot.querySelector('title')?.textContent || '');
+      if (!match) return;
+      const total = new Intl.NumberFormat('es-CL').format(Number(match[1].replaceAll(',', '')));
+      const label = document.querySelector('#liveVisitCount');
+      label.textContent = total;
+      label.hidden = false;
+      badge.hidden = true;
+      document.querySelector('#visitError').hidden = true;
+    } catch {
+      // Preserve the last displayed count during temporary outages.
+    }
+  }
+  setInterval(refreshCounter, counterRefreshInterval);
+  document.addEventListener('visibilitychange', refreshCounter);
 
   const chile = 'America/Santiago';
   const dateLabel = new Intl.DateTimeFormat('es-CL', {
