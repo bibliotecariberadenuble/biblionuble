@@ -2,14 +2,18 @@ const $=s=>document.querySelector(s);let data=[],pending=[],category='Todas',fav
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function safeUrl(s){if(!String(s??'').trim())return '';try{const u=new URL(s,location.href);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
 function csvParse(t){let rows=[],row=[],cell='',quoted=false;for(let i=0;i<t.length;i++){let c=t[i];if(c==='"'){if(quoted&&t[i+1]==='"'){cell+='"';i++}else quoted=!quoted}else if(c===','&&!quoted){row.push(cell);cell=''}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&t[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(x=>x.trim()))rows.push(row);const headers=(rows.shift()||[]).map(x=>x.trim().toLowerCase().replace(/^\ufeff/,''));if(!headers.includes('titulo')||!headers.includes('enlace'))throw Error('Faltan columnas titulo y enlace');return rows.map(r=>Object.fromEntries(headers.map((h,i)=>[h,(r[i]||'').trim()])))}
-function normalize(rows){return rows.filter(b=>b.titulo&&b.enlace&&['publicado','visible','sí','si'].includes((b.estado||'').toLowerCase())).map((b,i)=>({...b,id:b.id||'libro-'+i,categoria:b.categoria||'Otros',curso:b.curso||'',formato:b.formato||'PDF'})).filter(b=>['PDF','HTML','WEB'].includes(b.formato.toUpperCase())&&safeUrl(b.enlace)).sort((a,b)=>Number(Boolean(safeUrl(b.enlace)))-Number(Boolean(safeUrl(a.enlace))))}
-function coverMarkup(b){const image=(b.portada||'').trim();if(/^https:\/\//i.test(image)||/^\.\/portadas\/primer-ciclo\/[a-z0-9_-]+\.webp$/.test(image)){return '<img class="book-scene" src="'+esc(image)+'" alt="Portada de '+esc(b.titulo)+'" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="cover-fallback" hidden><span>📚</span><strong>'+esc(b.titulo)+'</strong></div>'}const palettes=[['#0c466a','#1d9ab4','#ffe18c'],['#512774','#a858bd','#ffd4e8'],['#164f3e','#4caa75','#fff0a6'],['#783c23','#e99b49','#fff2b0'],['#243b7b','#5989dd','#dbe9ff'],['#71304d','#d8687e','#ffebc6'],['#25515d','#67b7b0','#f8e7ad'],['#3e355e','#8b7dca','#fff1d1']];let hash=0;for(const c of b.titulo)hash=(hash*31+c.charCodeAt(0))>>>0;const p=palettes[hash%palettes.length];const t=b.titulo.toLowerCase();const motif=/mar|río|siren|agua|isla|naveg|crusoe|odisea/.test(t)?'🌊':/quijote|mosquet|caballero|robin|guerra|cid|araucana/.test(t)?'⚔':/harry|magia|fantas|bruja|hobbit|bombadil/.test(t)?'✦':/sherlock|crimen|morgue|carta|mister|detective/.test(t)?'⌕':/poe|cuervo|gato|muerte|tumba|entierro|usher/.test(t)?'☾':/robot|fundación|galaxia|espacial|matrix|2001|2010/.test(t)?'✧':/filosof|ética|método|aristóteles|discurso/.test(t)?'◈':'✿';const title=esc(b.titulo),author=esc(b.autor||'BiblioÑuble');return '<div class="illustrated-cover" style="--cover-dark:'+p[0]+';--cover-mid:'+p[1]+';--cover-light:'+p[2]+'"><div class="cover-sky"><i class="cover-orbit"></i><span class="cover-symbol" aria-hidden="true">'+motif+'</span><i class="cover-hill hill-one"></i><i class="cover-hill hill-two"></i></div><div class="cover-lettering"><strong>'+title+'</strong><small>'+author+'</small></div><span class="cover-stamp">BIBLIOÑUBLE</span></div>'}
+const firstCycleCategory = 'Primer Ciclo de Enseñanza Básica';
+const isPublished = book => ['publicado', 'visible', 'sí', 'si'].includes((book.estado || '').toLowerCase());
+function normalize(rows){return rows.filter(b=>b.titulo&&b.enlace&&isPublished(b)).map((b,i)=>({...b,id:b.id||'libro-'+i,categoria:b.categoria||'Otros',curso:b.curso||'',formato:b.formato||'PDF'})).filter(b=>['PDF','HTML','WEB'].includes(b.formato.toUpperCase())&&safeUrl(b.enlace)).sort((a,b)=>Number(Boolean(safeUrl(b.enlace)))-Number(Boolean(safeUrl(a.enlace))))}
+function coverMarkup(b){const image=(b.portada||'').trim();if(/^https:\/\//i.test(image)||/^\.\/portadas\/(?:primer-ciclo\/)?[a-z0-9_-]+\.webp$/.test(image)){return '<img class="book-scene" src="'+esc(image)+'" alt="Portada de '+esc(b.titulo)+'" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="cover-fallback" hidden><span>📚</span><strong>'+esc(b.titulo)+'</strong></div>'}const palettes=[['#0c466a','#1d9ab4','#ffe18c'],['#512774','#a858bd','#ffd4e8'],['#164f3e','#4caa75','#fff0a6'],['#783c23','#e99b49','#fff2b0'],['#243b7b','#5989dd','#dbe9ff'],['#71304d','#d8687e','#ffebc6'],['#25515d','#67b7b0','#f8e7ad'],['#3e355e','#8b7dca','#fff1d1']];let hash=0;for(const c of b.titulo)hash=(hash*31+c.charCodeAt(0))>>>0;const p=palettes[hash%palettes.length];const t=b.titulo.toLowerCase();const motif=/mar|río|siren|agua|isla|naveg|crusoe|odisea/.test(t)?'🌊':/quijote|mosquet|caballero|robin|guerra|cid|araucana/.test(t)?'⚔':/harry|magia|fantas|bruja|hobbit|bombadil/.test(t)?'✦':/sherlock|crimen|morgue|carta|mister|detective/.test(t)?'⌕':/poe|cuervo|gato|muerte|tumba|entierro|usher/.test(t)?'☾':/robot|fundación|galaxia|espacial|matrix|2001|2010/.test(t)?'✧':/filosof|ética|método|aristóteles|discurso/.test(t)?'◈':'✿';const title=esc(b.titulo),author=esc(b.autor||'BiblioÑuble');return '<div class="illustrated-cover" style="--cover-dark:'+p[0]+';--cover-mid:'+p[1]+';--cover-light:'+p[2]+'"><div class="cover-sky"><i class="cover-orbit"></i><span class="cover-symbol" aria-hidden="true">'+motif+'</span><i class="cover-hill hill-one"></i><i class="cover-hill hill-two"></i></div><div class="cover-lettering"><strong>'+title+'</strong><small>'+author+'</small></div><span class="cover-stamp">BIBLIOÑUBLE</span></div>'}
 function openReader(book){const url=safeUrl(book.enlace);if(!url)return;if(book.formato.toUpperCase()==='HTML'){window.location.href=url;return;}if(book.formato.toUpperCase()==='WEB'){window.open(url,'_blank','noopener,noreferrer');return;}$('#readerTitle').textContent=book.titulo;$('#readerExternal').href=url;$('#readerExternal').textContent=book.formato.toUpperCase()==='HTML'?'Abrir lectura ↗':'Abrir PDF ↗';$('#readerFrame').src=url;$('#reader').hidden=false;document.body.style.overflow='hidden';$('#readerClose').focus()}
 function closeReader(){$('#reader').hidden=true;$('#readerFrame').src='about:blank';document.body.style.overflow=''}
 $('#readerClose').onclick=closeReader;$('#reader').addEventListener('click',e=>{if(e.target===$('#reader'))closeReader()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#reader').hidden)closeReader()});
 function bookCard(b){const el=document.createElement('article');el.className='book';el.innerHTML=`<div class="cover">${coverMarkup(b)}<button class="fav" aria-label="Marcar favorito">${favorites.has(b.id)?'♥':'♡'}</button></div><div class="bookbody"><span class="tag">${esc(b.categoria)} · ${esc(b.formato.toUpperCase())}</span><h3>${esc(b.titulo)}</h3><p class="author">${esc(b.autor)}</p><p class="description">${esc(b.descripcion)}</p>${safeUrl(b.enlace)?'<button class="read" type="button">📖 Leer ahora</button>':'<p class="unavailable">Lectura digital pendiente de habilitación</p>'}</div>`;el.querySelector('.fav').onclick=()=>{favorites.has(b.id)?favorites.delete(b.id):favorites.add(b.id);try{localStorage.setItem('biblionuble-favoritos',JSON.stringify([...favorites]))}catch{}render()};const read=el.querySelector('.read');if(read)read.onclick=()=>openReader(b);
-if (b.categoria === 'Primer Ciclo de Enseñanza Básica') {
+if (b.categoria === firstCycleCategory) {
   el.querySelector('.tag').textContent = b.curso.split(' ').join(' · ') + ' básico · PDF';
+}
+if (b.formato.toUpperCase() === 'PDF' && new URL(safeUrl(b.enlace)).origin === location.origin) {
   const download = document.createElement('a');
   download.href = safeUrl(b.enlace);
   download.download = '';
@@ -19,6 +23,57 @@ if (b.categoria === 'Primer Ciclo de Enseñanza Básica') {
   download.style.marginTop = '8px';
   el.querySelector('.bookbody').append(download);
 }const cover=el.querySelector('.cover');const title=el.querySelector('h3');cover.style.cursor='pointer';title.style.cursor='pointer';cover.addEventListener('click',e=>{if(!e.target.closest('.fav'))openReader(b)});title.addEventListener('click',()=>openReader(b));return el}
-function render(){const pendingBox=document.querySelector('#pendingBooks');if(pendingBox){pendingBox.replaceChildren(...pending.map(b=>{const e=document.createElement('article');e.className='book';e.innerHTML='<div class="cover">'+coverMarkup(b)+'</div><div class="bookbody"><span class="tag">PRONTO · En revisión</span><h3>'+esc(b.titulo)+'</h3><p class="author">'+esc(b.autor)+'</p><p class="description">En revisión de derechos y disponibilidad. Se habilitará cuando exista autorización o una edición legalmente reutilizable.</p></div>';return e}));}const q=$('#search').value.trim().toLocaleLowerCase('es'),course=$('#course').value;const cats=['Todas',...new Set(data.map(b=>b.categoria).filter(Boolean))];$('#categories').replaceChildren(...cats.map(c=>{const b=document.createElement('button');b.textContent=c;b.className=category===c?'active':'';b.onclick=()=>{category=c;render()};return b}));$('#favoritesToggle').classList.toggle('active',favsOnly);const visible=data.filter(b=>(category==='Todas'||b.categoria===category)&&(!course||b.curso.includes(course))&&(!favsOnly||favorites.has(b.id))&&[b.titulo,b.autor,b.categoria,b.descripcion].join(' ').toLocaleLowerCase('es').includes(q));$('#count').textContent=visible.length+' libros';$('#books').replaceChildren(...visible.map(bookCard));const firstCycle=$('#primerCicloBooks');if(firstCycle){firstCycle.replaceChildren(...data.filter(b=>b.categoria==='Primer Ciclo de Enseñanza Básica').map(bookCard));}if(!visible.length){$('#books').innerHTML='<div class="empty"><div class="empty-icon">📚</div><h3>'+ (data.length?'No encontramos libros con esos filtros':'Próximamente, nuevos libros')+'</h3><p>'+(data.length?'Prueba otra búsqueda o categoría.':'Estamos preparando nuestra colección de lecturas en PDF. ¡Vuelve pronto!')+'</p></div>'}}
-async function load(){try{const url=window.BIBLIO_CONFIG?.csvUrl?.trim()||'./catalogo.csv';const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const rows=csvParse(await r.text());data=normalize(rows);pending=rows.filter(b=>b.titulo&&!['publicado','visible','sí','si'].includes((b.estado||'').toLowerCase()));$('#status').textContent=''}catch(e){data=[];pending=[];$('#status').textContent='No se pudo cargar el catálogo. Intenta actualizar la página.';console.warn(e)}render()}
+function pendingCard(book) {
+  const card = document.createElement('article');
+  card.className = 'book';
+  card.innerHTML = `<div class="cover">${coverMarkup(book)}</div>
+    <div class="bookbody">
+      <span class="tag">Autorización pendiente</span>
+      <h3>${esc(book.titulo)}</h3>
+      <p class="author">${esc(book.autor)}</p>
+    </div>`;
+  return card;
+}
+
+function renderShelf(gridId, countId, books, makeCard, emptyMessage) {
+  const grid = $(gridId);
+  $(countId).textContent = books.length + (books.length === 1 ? ' libro' : ' libros');
+  grid.replaceChildren(...books.map(makeCard));
+  if (!books.length) {
+    const empty = document.createElement('p');
+    empty.className = 'empty';
+    empty.textContent = emptyMessage;
+    grid.append(empty);
+  }
+}
+
+function render() {
+  const query = $('#search').value.trim().toLocaleLowerCase('es');
+  const course = $('#course').value;
+  const matchesSearch = book => [book.titulo, book.autor, book.categoria, book.descripcion]
+    .join(' ').toLocaleLowerCase('es').includes(query);
+  const matchesCourse = book => !course || (book.curso || '').split(/\s+/).includes(course);
+  const categories = ['Todas', ...new Set(data.map(book => book.categoria))];
+
+  $('#categories').replaceChildren(...categories.map(name => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = name;
+    button.className = category === name ? 'active' : '';
+    button.setAttribute('aria-pressed', String(category === name));
+    button.onclick = () => { category = name; render(); };
+    return button;
+  }));
+  $('#favoritesToggle').classList.toggle('active', favsOnly);
+
+  const visible = data.filter(book => (category === 'Todas' || book.categoria === category)
+    && matchesSearch(book) && matchesCourse(book) && (!favsOnly || favorites.has(book.id)));
+  renderShelf('#books', '#count', visible.filter(book => book.categoria !== firstCycleCategory),
+    bookCard, 'No encontramos libros con estos filtros.');
+  renderShelf('#primerCicloBooks', '#primerCicloCount', visible.filter(book => book.categoria === firstCycleCategory),
+    bookCard, 'No encontramos lecturas de Primer Ciclo con estos filtros.');
+  renderShelf('#pendingBooks', '#pendingCount', pending.filter(book => matchesSearch(book) && matchesCourse(book)),
+    pendingCard, 'No hay libros recibidos que coincidan con la búsqueda.');
+}
+async function load(){try{const url=window.BIBLIO_CONFIG?.csvUrl?.trim()||'./catalogo.csv';const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const rows=csvParse(await r.text());data=normalize(rows);pending=rows.filter(b=>b.titulo&&!isPublished(b)&&b.archivo_recibido?.toLowerCase()==='sí');$('#status').textContent=''}catch(e){data=[];pending=[];$('#status').textContent='No se pudo cargar el catálogo. Intenta actualizar la página.';console.warn(e)}render()}
 ['search','course'].forEach(id=>$('#'+id).addEventListener(id==='search'?'input':'change',render));$('#favoritesToggle').onclick=()=>{favsOnly=!favsOnly;render()};let installPrompt=window.__biblioInstallPrompt||null;const installBtn=$('#install');const installStrip=document.querySelector('.install-strip');const help=$('#installHelp');const isInstalled=()=>matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;const updateInstall=()=>{const ready=Boolean(installPrompt)&&!isInstalled();installBtn.hidden=!ready;if(installStrip)installStrip.hidden=!ready};window.addEventListener('biblio-install-ready',()=>{installPrompt=window.__biblioInstallPrompt;updateInstall()});window.addEventListener('appinstalled',()=>{installPrompt=null;updateInstall()});installBtn.addEventListener('click',async()=>{if(!installPrompt)return;const event=installPrompt;try{await event.prompt();installPrompt=null;window.__biblioInstallPrompt=null;updateInstall();await event.userChoice}catch(error){console.warn('No fue posible mostrar la instalación nativa:',error);installPrompt=null;updateInstall()}});if(help)help.hidden=true;updateInstall();load();
