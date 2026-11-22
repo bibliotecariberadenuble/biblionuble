@@ -1,13 +1,13 @@
-id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado,archivo_recibido
+id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado,archivo_recibido,seccion
 83,El diario de un homínido,Estudiantes autores; corrección Prof. Miguel Méndez Bravo,Creaciones estudiantiles,7° 8°,PDF,Relatos originales de 13 estudiantes sobre la vida y aventuras de los primeros homínidos.,./portadas/el-diario-de-un-hominido.webp,./libros/el-diario-de-un-hominido.pdf,Publicado
 1,Charlie y la fábrica de chocolate,Roald Dahl,Literatura infantil,5° 6°,PDF,La aventura de Charlie Bucket y la extraordinaria fábrica de Willy Wonka.,./portadas/charlie.svg,,Pendiente,Sí
 2,Harry Potter y la cámara secreta,J. K. Rowling,Fantasía,6° 7° 8°,PDF,Una nueva aventura de Harry Potter en Hogwarts.,./portadas/harry.svg,,Pendiente,Sí
 3,Papelucho en la clínica,Marcela Paz,Literatura chilena,5° 6°,PDF,Las peripecias de Papelucho durante una inesperada estadía en la clínica.,./portadas/papelucho.svg,,Pendiente
-4,El secreto del río,BiblioÑuble,Relatos y comprensión,5° 6° 7° 8°,HTML,Relato original con preguntas de inferencia y reflexión,./portadas/rio.svg,./lecturas/el-secreto-del-rio.html,Publicado
-5,La Edad de Oro: prólogo,José Martí,Cuentos y formación,5° 6° 7°,WEB,Texto original de José Martí sobre lectura infancia y conocimiento,./portadas/oro.svg,https://es.wikisource.org/wiki/La_Edad_de_Oro/Pr%C3%B3logo,Publicado
+4,El secreto del río,BiblioÑuble,Relatos y comprensión,5° 6° 7° 8°,HTML,Relato original con preguntas de inferencia y reflexión,./portadas/rio.svg,./lecturas/el-secreto-del-rio.html,Publicado,,segundo-ciclo
+5,La Edad de Oro: prólogo,José Martí,Cuentos y formación,5° 6° 7°,WEB,Texto original de José Martí sobre lectura infancia y conocimiento,./portadas/oro.svg,https://es.wikisource.org/wiki/La_Edad_de_Oro/Pr%C3%B3logo,Publicado,,segundo-ciclo
 6,El almohadón de pluma,Horacio Quiroga,Misterio y suspenso,7° 8°,WEB,Cuento clásico para analizar atmósfera e inferencias,./portadas/almohadon.svg,https://es.wikisource.org/wiki/El_almohad%C3%B3n_de_pluma,Publicado
-7,El Lazarillo de Tormes,Anónimo,Clásicos en español,7° 8°,WEB,Novela picaresca clásica con lenguaje antiguo; lectura acompañada,./portadas/lazarillo.svg,https://es.wikisource.org/wiki/El_Lazarillo_de_Tormes,Publicado
-8,La Edad de Oro: La última página,José Martí,Cuentos y formación,5° 6° 7°,WEB,Reflexión sobre la lectura la cultura y la formación de jóvenes,./portadas/oro.svg,https://es.wikisource.org/wiki/La_Edad_de_Oro/La_%C3%BAltima_p%C3%A1gina,Publicado
+7,El Lazarillo de Tormes,Anónimo,Clásicos en español,7° 8°,WEB,Novela picaresca clásica con lenguaje antiguo; lectura acompañada,./portadas/lazarillo.svg,https://es.wikisource.org/wiki/El_Lazarillo_de_Tormes,Publicado,,segundo-ciclo
+8,La Edad de Oro: La última página,José Martí,Cuentos y formación,5° 6° 7°,WEB,Reflexión sobre la lectura la cultura y la formación de jóvenes,./portadas/oro.svg,https://es.wikisource.org/wiki/La_Edad_de_Oro/La_%C3%BAltima_p%C3%A1gina,Publicado,,segundo-ciclo
 9,Fundación,Isaac Asimov,Ciencia ficción,7° 8°,PDF,Un matemático anticipa la caída de un imperio galáctico y busca preservar el conocimiento.,./portadas/fundacion.svg,,Pendiente,Sí
 10,La Araucana,Alonso de Ercilla,Poesía épica e historia,7° 8°,PDF,Poema épico sobre la conquista de Chile y la resistencia mapuche.,./portadas/araucana.svg,,Pendiente,Sí
 11,La guerra de las galaxias: Una nueva esperanza,George Lucas,Ciencia ficción,6° 7° 8°,PDF,Aventura espacial de resistencia frente a un imperio.,./portadas/aventura-espacial.svg,,Pendiente,Sí
@@ -51,12 +51,12 @@ id,titulo,autor,categoria,curso,formato,descripcion,portada,enlace,estado,archiv
 49,Poética,Aristóteles,Teoría literaria,8°,PDF,Estudio clásico de la tragedia; la poesía y la representación artística.,,,Pendiente,Sí
 50,Orgullo y prejuicio,Jane Austen,Novela clásica,8°,PDF,Elizabeth Bennet cuestiona prejuicios sociales y expectativas sobre el matrimonio.,,,Pendiente,Sí
 51,Caballo de Troya 1,J. J. Benítez,Ciencia ficción y narrativa,8°,PDF,Novela que imagina un viaje temporal a la época de Jesús.,,,Pendiente,Sí
-52,Martín Rivas,Alberto Blest Gana,Literatura chilena,8°,PDF,Novela sobre diferencias sociales y la vida santiaguina del siglo XIX.,,https://bibliotecariberadenuble.github.io/biblionuble/libros/martin-rivas.pdf,Publicado
+52,Martín Rivas,Alberto Blest Gana,Literatura chilena,8°,PDF,Novela sobre diferencias sociales y la vida santiaguina del siglo XIX.,,https://bibliotecariberadenuble.github.io/biblionuble/libros/martin-rivas.pdf,Publicado,,segundo-ciclo
 53,Una princesa de Marte,Edgar Rice Burroughs,Ciencia ficción y aventuras,7° 8°,PDF,John Carter vive aventuras en un Marte imaginario. Traducción sin acreditar.,,,Pendiente
 54,Caballo de Troya 2,J. J. Benítez,Ciencia ficción y narrativa,8°,PDF,Continuación del relato de viajes temporales y la vida de Jesús.,,,Pendiente,Sí
 55,Caballo de Troya 3: Saidán,J. J. Benítez,Ciencia ficción y narrativa,8°,PDF,Tercera entrega de la serie de aventuras y enigmas temporales.,,,Pendiente,Sí
 56,Alicia en el país de las maravillas,Lewis Carroll,Fantasía y clásicos,5° 6° 7°,PDF,Alicia explora un mundo fantástico de personajes y situaciones absurdas.,,,Pendiente,Sí
-57,Don Quijote de la Mancha,Miguel de Cervantes,Literatura clásica,7° 8°,PDF,Las aventuras del hidalgo Don Quijote y su compañero Sancho Panza.,,https://bibliotecariberadenuble.github.io/biblionuble/libros/don-quijote-de-la-mancha.pdf,Publicado
+57,Don Quijote de la Mancha,Miguel de Cervantes,Literatura clásica,7° 8°,PDF,Las aventuras del hidalgo Don Quijote y su compañero Sancho Panza.,,https://bibliotecariberadenuble.github.io/biblionuble/libros/don-quijote-de-la-mancha.pdf,Publicado,,segundo-ciclo
 58,2001: Una odisea espacial,Arthur C. Clarke,Ciencia ficción,8°,PDF,Una exploración espacial plantea preguntas sobre inteligencia y evolución.,,,Pendiente,Sí
 59,2010: Odisea dos,Arthur C. Clarke,Ciencia ficción,8°,PDF,Secuela de 2001 sobre exploración espacial y misterios cósmicos.,,,Pendiente,Sí
 60,El alquimista,Paulo Coelho,Novela contemporánea,8°,PDF,Un joven pastor emprende un viaje en busca de su destino.,,,Pendiente
@@ -144,3 +144,8 @@ recibido-hobbit,El hobbit,J. R. R. Tolkien,Fantasía,,PDF,Edición recibida y pe
 recibido-senor-anillos-1,El Señor de los Anillos: La Comunidad del Anillo,J. R. R. Tolkien,Fantasía,,PDF,Edición recibida y pendiente de autorización.,,,Pendiente,Sí
 recibido-senor-anillos-2,El Señor de los Anillos: Las dos torres,J. R. R. Tolkien,Fantasía,,PDF,Edición recibida y pendiente de autorización.,,,Pendiente,Sí
 recibido-senor-anillos-3,El Señor de los Anillos: El retorno del rey,J. R. R. Tolkien,Fantasía,,PDF,Edición recibida y pendiente de autorización.,,,Pendiente,Sí
+sc-la-abeja-haragana,La abeja haragana,Horacio Quiroga,Fábulas y cuentos,5° 6°,PDF,Una abeja recurre a su ingenio para superar un desafío. Suspenso y amenazas sin violencia gráfica.,./portadas/segundo-ciclo/la-abeja-haragana.webp,./libros/segundo-ciclo/la-abeja-haragana.pdf,Publicado,,segundo-ciclo
+sc-biju-teje-magia,Biju teje magia,Jaya Jaitly,Cuentos ilustrados,5° 6°,PDF,Biju viaja a Delhi y comparte el arte de hilar. Lectura acompañada para conversar sobre los saberes familiares y el trabajo infantil.,./portadas/segundo-ciclo/biju-teje-magia.webp,./libros/segundo-ciclo/biju-teje-magia.pdf,Publicado,,segundo-ciclo
+sc-que-edad-tiene-muttajji,¿Qué edad tiene Muttajji?,Roopa Pai,Misterio e historia,6° 7°,PDF,"Dos gemelos cruzan recuerdos, fechas y documentos para resolver un misterio familiar. Lectura acompañada para contextualizar una referencia breve al matrimonio adolescente.",./portadas/segundo-ciclo/que-edad-tiene-muttajji.webp,./libros/segundo-ciclo/que-edad-tiene-muttajji.pdf,Publicado,,segundo-ciclo
+sc-la-pincoya,La Pincoya,Tradición chilota; recopilación de Julio Vicuña Cifuentes,Mitos y leyendas,6° 7°,PDF,El hada del mar anuncia la abundancia o escasez de peces y mariscos. Permite interpretar el simbolismo marino.,./portadas/segundo-ciclo/la-pincoya.webp,./libros/segundo-ciclo/la-pincoya.pdf,Publicado,,segundo-ciclo
+sc-el-caleuche,El Caleuche: la chalupa de Chonchi,Tradición chilota; recopilación de Julio Vicuña Cifuentes,Mitos y leyendas,7° 8°,PDF,La desaparición de una chalupa despierta sospechas en Chonchi. Lectura guiada para distinguir los hechos de las interpretaciones y aclarar el vocabulario histórico.,./portadas/segundo-ciclo/el-caleuche.webp,./libros/segundo-ciclo/el-caleuche.pdf,Publicado,,segundo-ciclo
