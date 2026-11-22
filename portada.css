@@ -92,3 +92,34 @@
 
 .live-visit-count { font-size: 1.6rem; color: #176c55; font-variant-numeric: tabular-nums; }
 .side-panel .visit-caption { color: #486375; font-size: .8rem; line-height: 1.4; }
+
+#pie {
+  margin: 36px auto;
+  padding: clamp(14px, 2vw, 24px);
+  border: 1px solid #ddd9ec;
+  border-radius: 20px;
+  background: #f6f3fb;
+}
+.pie-group > h3 { margin: 20px 0 10px; color: #413367; }
+.pie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  gap: 12px;
+}
+.pie-card {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: white;
+  border: 1px solid #e5e0ed;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+.pie-card > img { width: 100%; height: 130px; object-fit: contain; border-radius: 8px; background: #f8f8fc; }
+.pie-card h4 { margin: 10px 0 0; font-size: 1rem; color: #233b55; }
+.pie-card p { margin: 6px 0 10px; }
+.pie-source { font-size: .85rem; color: #4b6074; }
+.pie-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; }
+.pie-actions .read { width: auto; }
+.pie-credits { margin-top: 20px; }
+.pie-credits summary { cursor: pointer; font-weight: 700; color: #413367; }
