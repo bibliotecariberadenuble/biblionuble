@@ -1,0 +1,53 @@
+.library-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  width: min(100% - 28px, 1680px);
+  margin: 0 auto 36px;
+}
+.library-layout > main.wrap { width: 100%; min-width: 0; }
+.library-news, .library-social { min-width: 0; }
+.side-panel {
+  background: #fff;
+  border: 1px solid #dce7e4;
+  border-top: 4px solid #187351;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 5px 22px #163e5910;
+  overflow-wrap: anywhere;
+}
+.library-news .side-panel { border-top-color: #194b80; }
+.side-panel h2 { margin: 0 0 10px; color: #163b5b; font-size: 1.22rem; }
+.side-panel .side-date, .side-panel .item-source { font-size: .82rem; color: #486375; }
+.side-panel article { border-top: 1px solid #dce7e4; margin-top: 14px; padding-top: 12px; }
+.side-panel h3 { margin: 0 0 8px; font-size: .94rem; color: #19563f; }
+.side-panel p { margin: 8px 0; }
+.side-panel a:not(.social-link) { color: #174e80; text-underline-offset: 3px; }
+.visit-badge { width: auto; height: 26px; max-width: 100%; vertical-align: middle; }
+.side-panel .share-title { margin-top: 22px; }
+.social-links { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 6px; }
+.social-link {
+  display: flex; align-items: center; justify-content: center;
+  padding: 8px 4px; min-height: 42px; border-radius: 8px;
+  font: inherit; font-weight: 700; font-size: .77rem; line-height: 1.2;
+  background: #eff6fa; color: #173c58; text-align: center; text-decoration: none;
+  border: 1px solid #d5e2eb; cursor: pointer;
+}
+.social-link:hover { background: #dbeef6; }
+.social-link:focus-visible { outline: 2px solid #184b84; outline-offset: 2px; }
+.share-feedback { color: #225b44; font-size: .84rem; }
+.share-feedback:empty { display: none; }
+#educacion-inicial { margin: 36px auto; padding: clamp(14px, 2vw, 24px); border-radius: 20px; background: #fff6e6; border: 1px solid #eedcba; }
+@media (min-width: 760px) and (max-width: 1239px) {
+  .library-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .library-layout > main { grid-column: 1 / -1; }
+}
+@media (min-width: 1240px) {
+  .library-layout { grid-template-columns: minmax(175px, 215px) minmax(0, 1fr) minmax(180px, 218px); gap: 18px; align-items: start; }
+  .library-layout > main { grid-column: 2; grid-row: 1; padding-inline: 0; }
+  .library-news { grid-column: 1; grid-row: 1; }
+  .library-social { grid-column: 3; grid-row: 1; }
+  .library-layout > aside { margin-top: 22px; }
+}
+
+@media (min-width: 1240px) { .side-jump { display: none !important; } }
