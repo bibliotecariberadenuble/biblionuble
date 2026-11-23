@@ -1,19 +1,20 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "news": {
-    "title": "FILSA abre la convocatoria para el Premio a la Edición 2026",
-    "summary": "La Cámara Chilena del Libro abrió la convocatoria en la feria de Santiago para reconocer el trabajo de editoriales y editores del país.",
-    "source": "Cámara Chilena del Libro",
-    "date": "2026-11-21",
-    "url": "https://camaradellibro.cl/camara-chilena-del-libro-abre-convocatoria-para-el-tradicional-premio-a-la-edicion-2026/"
+    "title": "La feria del libro de Chivilcoy reunió a lectores y editoriales",
+    "summary": "El encuentro gratuito en Argentina reunió a escritores, librerías y editoriales en el Club Racing. Hubo talleres, lecturas y actividades para niñas y niños.",
+    "source": "HoyChivilcoy",
+    "date": "2026-11-23",
+    "url": "https://hoychivilcoy.com/2026/11/23/feria-del-libro-reunio-a-escritores-lectores-editoriales-y-amantes-de-la-cultura/"
   },
   "anniversary": {
-    "title": "1819 · Nace George Eliot",
-    "summary": "El 22 de noviembre nació Mary Ann Evans, novelista británica que firmó como George Eliot. Entre sus obras está Middlemarch.",
-    "source": "Encyclopaedia Britannica",
-    "url": "https://www.britannica.com/biography/George-Eliot"
+    "title": "1221 · Nace Alfonso X el Sabio",
+    "summary": "El 23 de noviembre nació Alfonso X en Toledo. Durante su reinado se compusieron las Cantigas de Santa María, una colección medieval de poesía y música.",
+    "source": "Junta de Andalucía",
+    "url": "https://www.juntadeandalucia.es/presidencia/portavoz/cultura/163450/presidenciaadministracionpublicaeinterior/centrodeestudiosandaluces/andaluciaenlahistoria/revista/alfonsoxelsabio/andalucia/articulacionterritorial/reinonazari/gobiernodeandalucia"
   },
   "recentNews": [
+    "https://hoychivilcoy.com/2026/11/23/feria-del-libro-reunio-a-escritores-lectores-editoriales-y-amantes-de-la-cultura/",
     "https://camaradellibro.cl/camara-chilena-del-libro-abre-convocatoria-para-el-tradicional-premio-a-la-edicion-2026/"
   ]
 }
