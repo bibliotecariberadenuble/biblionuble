@@ -1,19 +1,20 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "news": {
-    "title": "La feria del libro de Chivilcoy reunió a lectores y editoriales",
-    "summary": "El encuentro gratuito en Argentina reunió a escritores, librerías y editoriales en el Club Racing. Hubo talleres, lecturas y actividades para niñas y niños.",
-    "source": "HoyChivilcoy",
-    "date": "2026-11-23",
-    "url": "https://hoychivilcoy.com/2026/11/23/feria-del-libro-reunio-a-escritores-lectores-editoriales-y-amantes-de-la-cultura/"
+    "title": "La Furia del Libro anuncia autores invitados para diciembre",
+    "summary": "La feria se realizará del 17 al 20 de diciembre en el Centro Cultural Gabriela Mistral, en Santiago, con entrada liberada. Entre los invitados están la escritora mexicana Brenda Navarro y el poeta chileno Mauricio Redolés.",
+    "source": "La Estrella de Valparaíso",
+    "date": "2026-11-24",
+    "url": "https://www.estrellavalpo.cl/impresa/2026/11/24/full/cuerpo-principal/15/"
   },
   "anniversary": {
-    "title": "1221 · Nace Alfonso X el Sabio",
-    "summary": "El 23 de noviembre nació Alfonso X en Toledo. Durante su reinado se compusieron las Cantigas de Santa María, una colección medieval de poesía y música.",
-    "source": "Junta de Andalucía",
-    "url": "https://www.juntadeandalucia.es/presidencia/portavoz/cultura/163450/presidenciaadministracionpublicaeinterior/centrodeestudiosandaluces/andaluciaenlahistoria/revista/alfonsoxelsabio/andalucia/articulacionterritorial/reinonazari/gobiernodeandalucia"
+    "title": "1826 · Nace Carlo Collodi, autor de Pinocho",
+    "summary": "Hace 200 años nació en Florencia Carlo Lorenzini, conocido como Carlo Collodi. Las aventuras de Pinocho se publicaron primero por entregas en un periódico infantil y llegaron al formato de libro en 1883.",
+    "source": "Treccani",
+    "url": "https://www.treccani.it/magazine/atlante/cultura/pinocchio-tra-teatro-e-cinema-duecento-anni-dopo-la-nascita-di-carlo-collodi.html"
   },
   "recentNews": [
+    "https://www.estrellavalpo.cl/impresa/2026/11/24/full/cuerpo-principal/15/",
     "https://hoychivilcoy.com/2026/11/23/feria-del-libro-reunio-a-escritores-lectores-editoriales-y-amantes-de-la-cultura/",
     "https://camaradellibro.cl/camara-chilena-del-libro-abre-convocatoria-para-el-tradicional-premio-a-la-edicion-2026/"
   ]
