@@ -1,19 +1,20 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "news": {
-    "title": "Italia será la invitada de honor en la Feria del Libro de Guadalajara",
-    "summary": "La feria se realizará en México del 28 de noviembre al 6 de diciembre. Italia participará con 58 escritores y una programación de 120 actividades literarias.",
-    "source": "Excélsior",
-    "date": "2026-11-25",
-    "url": "https://www.excelsior.com.mx/cultura/italia-llevara-potencia-editorial-y-cultural-fil-guadalajara"
+    "title": "Una jornada gratuita de lectura familiar llega al GAM",
+    "summary": "Este sábado 28 de noviembre, el Centro Cultural Gabriela Mistral recibirá a las familias con cuentacuentos, talleres y títeres. La actividad celebra los 15 años del programa de fomento lector Viva Leer Copec.",
+    "source": "La Tercera (publirreportaje)",
+    "date": "2026-11-26",
+    "url": "https://www.latercera.com/publirreportajes/noticia/mas-de-55-millones-de-libros-y-160-bibliotecas-viva-leer-copec-se-consolida-como-uno-de-los-programas-de-fomento-lector-mas-grandes-de-chile/"
   },
   "anniversary": {
-    "title": "1562 · Natalicio de Lope de Vega",
-    "summary": "El 25 de noviembre es la fecha tradicional del nacimiento de Lope de Vega en Madrid. El poeta y dramaturgo español escribió comedias como El perro del hortelano y La dama boba.",
-    "source": "Biblioteca Virtual Miguel de Cervantes",
-    "url": "https://www.cervantesvirtual.com/obra-visor/principios-generales-de-literatura-e-historia-de-la-literatura-espanola--0/html/ff0f491a-82b1-11df-acc7-002185ce6064_87.html"
+    "title": "1864 · Lewis Carroll regala el manuscrito de Alicia",
+    "summary": "El 26 de noviembre, Lewis Carroll le regaló a Alice Liddell un manuscrito que él mismo ilustró. De esa primera versión nació Alicia en el país de las maravillas.",
+    "source": "Biblioteca Británica",
+    "url": "https://www.britishlibrary.cn/en/works/alice-in-wonderland/"
   },
   "recentNews": [
+    "https://www.latercera.com/publirreportajes/noticia/mas-de-55-millones-de-libros-y-160-bibliotecas-viva-leer-copec-se-consolida-como-uno-de-los-programas-de-fomento-lector-mas-grandes-de-chile/",
     "https://www.excelsior.com.mx/cultura/italia-llevara-potencia-editorial-y-cultural-fil-guadalajara",
     "https://www.estrellavalpo.cl/impresa/2026/11/24/full/cuerpo-principal/15/",
     "https://hoychivilcoy.com/2026/11/23/feria-del-libro-reunio-a-escritores-lectores-editoriales-y-amantes-de-la-cultura/",
