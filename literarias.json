@@ -1,19 +1,20 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "news": {
-    "title": "Una jornada gratuita de lectura familiar llega al GAM",
-    "summary": "Este sábado 28 de noviembre, el Centro Cultural Gabriela Mistral recibirá a las familias con cuentacuentos, talleres y títeres. La actividad celebra los 15 años del programa de fomento lector Viva Leer Copec.",
-    "source": "La Tercera (publirreportaje)",
-    "date": "2026-11-26",
-    "url": "https://www.latercera.com/publirreportajes/noticia/mas-de-55-millones-de-libros-y-160-bibliotecas-viva-leer-copec-se-consolida-como-uno-de-los-programas-de-fomento-lector-mas-grandes-de-chile/"
+    "title": "La UNAM llevará cuentos y novela juvenil a la feria de Guadalajara",
+    "summary": "La Universidad Nacional Autónoma de México prepara un cuentacuentos de La estrella fantástica para niñas y niños. También presentará Jhonny Jerez, obra de Daniel San Mateo premiada en el certamen juvenil Universo de Letras 2026.",
+    "source": "Revista Siempre!",
+    "date": "2026-11-27",
+    "url": "https://www.siempre.mx/2026/11/los-desafios-del-presente-marcaran-la-participacion-de-la-unam-en-la-fil-guadalajara-2026/"
   },
   "anniversary": {
-    "title": "1864 · Lewis Carroll regala el manuscrito de Alicia",
-    "summary": "El 26 de noviembre, Lewis Carroll le regaló a Alice Liddell un manuscrito que él mismo ilustró. De esa primera versión nació Alicia en el país de las maravillas.",
-    "source": "Biblioteca Británica",
-    "url": "https://www.britishlibrary.cn/en/works/alice-in-wonderland/"
+    "title": "1998 · Muere la poeta Gloria Fuertes",
+    "summary": "El 27 de noviembre murió en Madrid Gloria Fuertes, autora de Cangura para todo. Además de escribir cuentos y poemas para niños, organizó una biblioteca infantil ambulante para pequeños pueblos.",
+    "source": "Biblioteca Virtual Miguel de Cervantes",
+    "url": "https://cervantesvirtual.com/portales/gloria_fuertes/autora_cronologia/"
   },
   "recentNews": [
+    "https://www.siempre.mx/2026/11/los-desafios-del-presente-marcaran-la-participacion-de-la-unam-en-la-fil-guadalajara-2026/",
     "https://www.latercera.com/publirreportajes/noticia/mas-de-55-millones-de-libros-y-160-bibliotecas-viva-leer-copec-se-consolida-como-uno-de-los-programas-de-fomento-lector-mas-grandes-de-chile/",
     "https://www.excelsior.com.mx/cultura/italia-llevara-potencia-editorial-y-cultural-fil-guadalajara",
     "https://www.estrellavalpo.cl/impresa/2026/11/24/full/cuerpo-principal/15/",
